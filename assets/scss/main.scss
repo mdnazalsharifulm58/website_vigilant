@@ -1,0 +1,82 @@
+/*
+Theme Name: TheShave
+Theme URI: http://everytuesdayshop.com/html/shave/
+Author: Spencer Bigum
+Author URI: http://www.spencerbigum.com
+Description: The Shave Barbershop HTML Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Core Settings
+	## Fonts
+	## Variables
+	## Functions
+	## Mixins
+	## Base Settings
+	## Effects
+	## Headlines
+	## Helper Classes
+	## Buttons
+	## Forms
+# Modules
+	## Navigation
+	## Feature Module 1
+	## Feature Module 2
+	## Staggered Grid
+	## Contact Overview
+	## Testimonial Box
+	## Buy Theme Promo
+	## Footer
+	## Faq
+	## Col-3 Module
+	## Products
+	## Prices
+	## Social Bar
+	## Book Now Modal
+	## Barber Team Card
+	## Revolution Slider Settings
+	## Toast
+	## Why Us
+	## image-text
+# Widgets
+# Pages
+	## Contact Us
+	## Gallery Girds
+	## Gallery Details
+	## About Us
+	## Prices
+# Blog
+	## Blog Index
+    ## Posts
+	## Comments
+--------------------------------------------------------------*/
+@import "vendor/index";
+
+// ==========================================================================
+// Base Settings
+//
+// ==========================================================================
+@import "core/index";
+
+// ==========================================================================
+// Modules
+//
+// ==========================================================================
+@import "modules/index";
+
+// ==========================================================================
+// Pages
+// 
+// ==========================================================================
+@import "pages/index";
+
+// ==========================================================================
+// Blog
+//
+// ==========================================================================
+@import "blog/index";

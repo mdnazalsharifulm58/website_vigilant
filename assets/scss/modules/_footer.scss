@@ -1,0 +1,298 @@
+/***************************************************************************/
+/* Footer ****************************************************/
+/***************************************************************************/
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $black;
+    opacity: 0;
+    @include transition(opacity 1s .9s ease-out);
+    &.safari {
+        z-index: 0;
+    }
+    &.loaded {
+        opacity: 1;
+    }
+}
+.footer-push {
+    margin-bottom: $footerPush;
+}
+
+.footer__wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    color: #fff;
+}
+
+.footer__row {
+    margin: 0 30px !important;
+}
+
+.footer__logo {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .logo__container {
+        text-align: center;
+        padding: 2em;
+        position: relative;
+        z-index: 100;
+        font-family: $heading-font;
+        h3 {
+            font-size: 26px;
+            margin: 0;
+            letter-spacing: 7px;
+        }
+        h4 {
+            color: $primary-color;
+            font-size: 18px;
+            font-family: $courier-new;
+            text-transform: none;
+            font-weight: 400;
+        }
+    }
+    &--img{
+        width:97px;
+        margin:0 auto 20px;
+    }
+}
+
+.footer__desc {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.email__wrapper {
+    margin-bottom: 25px;
+}
+
+.email__form {
+    clear: both;
+    display: table;
+    width: 100%;
+    margin-bottom: 0;
+    input {
+        background: transparent;
+        float: left;
+        font-size: 18px;
+        padding: 0;
+        border-radius: 0;
+        height: 50px;
+        border: 0;
+        box-shadow: none;
+        color: $primary-color;
+        border-bottom: 1px solid $white;
+        text-align: center;
+        &:focus {
+            box-shadow: none;
+            border-color: $white;
+        }
+        &::-webkit-input-placeholder {
+            color: $primary-color;
+        }
+        &::-moz-placeholder {
+            color: $primary-color;
+        }
+        &:-moz-placeholder {
+            color: $primary-color;
+        }
+        &:-ms-input-placeholder {
+            color: $primary-color;
+        }
+    }
+    .form-btn {
+        color: $white;
+        border: 3px solid $white;
+        margin: 20px auto 0;
+        width: 60%;
+        &:hover {
+            border: 3px solid $primary-color;
+        }
+    }
+}
+
+.email__offers {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer__contact {
+    margin: 0 0 15px;
+    text-align: center;
+    .footer__address {
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .contact {
+        a {
+            color: $primary-color;
+            display: block;
+        }
+    }
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+//TOOD: put social-footer icons in helper file
+.social-footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-top: none;
+    ul {
+        text-align: center;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        background-size: contain;
+        margin: 0 10px;
+        text-align: center;
+    }
+    a {
+        width: 23px;
+        height: 23px;
+        display: block;
+        color: $white;
+    }
+}
+
+// Displays greater than 600px
+@include breakpoint(tablet) {
+    .footer__logo {
+        .logo__container {
+            margin: 3em 19% 1em;
+        }
+    }
+    .email__form {
+        input {
+            font-size: 32px;
+        }
+    }
+    .email__wrapper {
+        margin-bottom: 50px;
+    }
+    .footer__contact {
+        margin: 0 0 40px;
+        .footer__address {
+            text-align: right;
+            p {
+                padding-right: 10px;
+            }
+        }
+        .contact {
+            text-align: left;
+            a {
+                padding-left: 10px;
+            }
+        }
+    }
+    .social-footer {
+        padding: 20px 0;
+        ul {
+            text-align: left;
+        }
+        & > div {
+            padding: 0 !important;
+        }
+        li {
+            margin: 0 0 0 20px;
+            float: right;
+            text-align: left;
+        }
+    }
+    .copyright {
+        padding: 0 0 0 15px;
+        text-align: left;
+        margin-top: 0;
+    }
+}
+
+// Displays greater than 992px
+@include breakpoint(laptop) {
+    footer{
+        position: fixed;
+        position: -webkit-sticky !important;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        z-index: 1;
+    }
+    .footer__wrapper {
+        padding: 40px 0;
+    }
+    .footer__logo {
+        width: 50%;
+        float: left;
+        display: inline-block;
+        .logo__container {
+            padding: 2em;
+            margin: 4em 19%;
+        }
+    }
+    .footer__desc {
+        display: inline-block;
+        width: 50%;
+        padding-left: 20px;
+    }
+    .social-footer {
+        padding: 0;
+        li {
+            margin: 0 20px 0 0;
+            float: left;
+            text-align: center;
+        }
+    }
+    .email__wrapper {
+        max-width: 525px;
+    }
+    .email__form {
+        input {
+            text-align: left;
+        }
+        .form-btn {
+            margin: 20px 0 0;
+            width: auto;
+        }
+    }
+    .email__offers {
+        text-align: left;
+    }
+    .email__wrapper {
+        margin-bottom: 70px;
+    }
+    .footer__contact {
+        margin: 0 0 70px;
+        .footer__address {
+            text-align: left;
+            p {
+                padding-right: 0;
+            }
+        }
+        .contact {
+            text-align: right;
+            a {
+                padding-left: 0;
+            }
+        }
+    }
+    .copyright {
+        padding: 0;
+        text-align: right;
+    }
+}
+
+// Displays greater than 1200px
+@include breakpoint(desktop) {}
+
+// Displays greater than 1600px
+@include breakpoint(desktopXL) {}

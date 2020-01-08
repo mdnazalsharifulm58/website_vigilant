@@ -1,0 +1,78 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+$font-url--ubuntu: 'http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,400italic';
+$ubuntu: 'Ubuntu', sans-serif;
+$courier   : Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+$courier-new   : 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+$heading-font: $ubuntu;
+
+
+// Font Weights
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$letter-space: 1px;
+
+// Descriptive Base Colors
+$white     : #fff;
+$black     : #252525;
+$lighter-grey: #F3F3F3;
+$grey      : #e8e8e8;
+$dark-grey : #d0d0d0;
+$darker-grey : #959595;
+$subtext-dk-grey: #6B6B6B;
+
+//Hover base colors
+$lighter-grey-hover: #D4D4D4;
+$dark-grey-hover: #B5B5B5;
+
+// BRAND COLOR
+$gold              : #af8c45;
+$cream             : #eae9e5;
+
+$primary-color     : $gold;
+$shadow-color      : rgba($black, .2);
+
+//** Global text color on `<body>`.
+$text-color:            $dark-grey !default;
+
+//** Global textual link color.
+$link-color:            $primary-color !default;
+
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+
+$base__font-size: 16px; //was 16
+$base__line: 24px; //was 24
+
+//SCREEN SIZES
+$desktop:                 1200px !default;
+$laptop:                  992px !default;
+$tablet:                  768px !default;
+$mobile:                  480px !default;
+
+//SCREEN SIZES FOR CODYHOUSE NAV
+$S:     $mobile;
+$M:     $tablet;
+$L:     $laptop;
+
+// So media queries don't overlap when required, provide a maximum
+$mobile-max:              ($tablet - 1) !default;
+$tablet-max:              ($laptop - 1) !default;
+$laptop-max:              ($desktop - 1) !default;
+
+//Z-Index categories
+$below-content: 1;
+$content: 2;
+$above-content: 3;
+
+//Header Sizes
+$header-S: 60px;
+$header-M: 80px;
+
+//Push space for footer
+$footerPush: 435px;

@@ -1,0 +1,298 @@
+/***************************************************************************/
+/* Blog details ****************************************************/
+/***************************************************************************/
+
+.blog__content {
+    position: relative;
+    max-width: 900px;
+    margin:0 auto;
+    &--inner {
+        padding: 40px 15px 0;
+        margin: 0 auto;
+    }
+    h3 {
+        text-align: left;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 2px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        word-wrap: break-word;
+        margin-bottom: 25px;
+    }
+    .pull-quote {
+        width: 90%;
+        border-left: 5px solid #af8c45;
+        margin: 0 auto 24px;
+        padding: 0 15px;
+        text-align: center;
+        &::before,
+        &::after {
+            content: none;
+        }
+    }
+    q {
+        font-size: 22px;
+        line-height: em(20px);
+        text-align: left;
+        font-weight: 300;
+        font-family: $ubuntu;
+    }
+    &--tags {
+        text-align: center;
+        margin: 40px 0 45px;
+        padding: 0 20px;
+        h5 {
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        a {
+            color: $black;
+            margin: 0 5px 10px;
+            border-bottom: 2px solid $primary-color;
+            display: inline-block;
+            word-wrap: normal;
+            word-break: break-all;
+        }
+    }
+}
+
+.blog__content--author {
+    margin: 0 auto 45px;
+    padding: 20px;
+    display: table;
+    max-width: 800px;
+    background-color: $grey;
+    .image {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        padding: 20px 0 0;
+        img {
+            max-width: 100px;
+            max-height: 100px;
+            vertical-align: super;
+        }
+    }
+    .text {
+        text-align: center;
+        margin-top: 18px;
+        padding: 0;
+        p {
+            word-wrap: break-word;
+            font-size: em(15px);
+            line-height: em(21px);
+        }
+    }
+}
+
+.blog-social {
+    position: relative;
+    i {
+        display: block;
+    }
+    a {
+        display: inline-block;
+    }
+    .social-container {
+        border-bottom: 1px solid $dark-grey;
+    }
+}
+
+.post-nav {
+    .next-post,
+    .prev-post {
+        height: auto;
+        cursor: pointer;
+        position: relative;
+        padding: 0;
+        background: $black;
+        color: #fff;
+        a, span {
+            color: #fff;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            left: 0;
+            height: 100%;
+        }
+        &:hover {
+            .post-nav-thumb {
+                opacity: .4;
+            }
+        }
+    }
+
+    &-thumb {
+        height: 300px;
+        opacity: .8;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include transition(opacity .3s);
+    }
+    &-content {
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        padding: 40px;
+        left: 0;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    &-subtitle {
+        font-family: $courier;
+        font-weight: 700;
+        display: block;
+        position: relative;
+    }
+    &-title {
+        margin-top: 5px;
+        position: relative;
+    }
+}
+
+// Displays greater than 768px
+@include breakpoint(tablet) {
+
+    .blog__content {
+        &--inner {
+            padding: 50px 20px 0;
+            margin-bottom: 50px;
+        }
+        &--tags {
+            margin: 40px 0 40px;
+        }
+        &--author {
+            .text {
+                padding-left: 36px;
+                text-align: left;
+            }
+        }
+        .pull-quote {
+            width: 60%;
+            margin: 45px auto 45px;
+            &.right,
+            &.left {}
+            &.right {
+                width: 50%;
+                float: right;
+                margin: 40px 0 45px 40px;
+                margin-right: -3%;
+                text-align: left;
+                padding-left: 20px;
+            }
+            &.left {
+                width: 50%;
+                float: left;
+                margin: 40px 45px 40px 0;
+                text-align: left;
+                padding-left: 20px;
+            }
+        }
+        h3 {
+            font-size: 22px;
+            letter-spacing: 5px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 25px;
+        }
+        q {
+            font-size: 24px;
+        }
+    }
+    .post-nav {
+        .prev-post {
+            text-align: right;
+            h2{
+                right:-5px;
+            }
+        }
+    }
+}
+
+// Displays greater than 992px
+@include breakpoint(laptop) {
+    .blog__content--author {
+        margin: 0 30px 45px;
+    }
+    .blog__offset {
+        margin-top: 75px;
+    }
+    .blog__content {
+        &--inner {
+            padding: 90px 0 0;
+        }
+        p {
+            line-height: 32px;
+            margin-bottom: 36px;
+        }
+        .pull-quote {
+            width: 50%;
+            &.right,
+            &.left {
+                width: 50%;
+            }
+            &.right {
+                float: right;
+                margin: 50px 0 50px 50px;
+                margin-right: -5%;
+                text-align: left;
+                padding-left: 20px;
+            }
+            &.left {
+                float: left;
+                margin: 50px 10px 50px 0;
+                margin-left: 0%;
+                padding-left: 20px;
+            }
+        }
+        q {
+            font-size: 28px;
+        }
+        &--author {
+            margin: 0 auto 75px;
+            .text {
+                padding-left: 36px;
+            }
+        }
+    }
+    .post-nav {
+        &-thumb {
+            height: 400px;
+        }
+    }
+}
+
+// Displays greater than 1200px
+@include breakpoint(desktop) {
+    .blog__content {
+        .pull-quote {
+            &.right,
+            &.left {
+                width: 50%;
+                padding-left: 20px;
+            }
+            &.right {
+                float: right;
+                margin: 50px 0 50px 50px;
+                margin-right: -22%;
+                text-align: left;
+            }
+            &.left {
+                float: left;
+                margin: 50px 50px 50px 0;
+                margin-left: -10%;
+            }
+        }
+    }
+}
+
+// Displays greater than 1600px
+@include breakpoint(desktopXL) {}

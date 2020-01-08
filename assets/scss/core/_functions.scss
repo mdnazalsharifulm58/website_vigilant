@@ -1,0 +1,21 @@
+// ==========================================================================
+// Functions
+// ==========================================================================
+
+// Import if Google Fonts URL is defined
+@if variable-exists(font-url--ubuntu){
+  @import url($font-url--ubuntu);
+}
+
+// Functions and Directives
+//$context: $base__font-size = basefont size is defualt if no context
+@function em($target, $context: $base__font-size){
+  @return ($target/$context) * 1em;
+}
+
+//call color palette modifiers
+//map-get(map-get($palettes, grey), x-dark);
+//https://www.codefellows.org/blog/so-you-want-to-play-with-list-maps
+@function palette($palette, $shade: 'base'){
+  @return map-get(map-get($palettes, $palette), $shade);
+}

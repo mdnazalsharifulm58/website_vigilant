@@ -1,0 +1,383 @@
+/***************************************************************************/
+/* Helper Classes ****************************************************/
+/***************************************************************************/
+.sv-wrapper{
+    padding:0 30px;
+}
+.clearfix{
+    clear:both;
+}
+.container-push-sm {
+    min-height: 325px;
+}
+.container-push-xs {
+    min-height: 195px;
+}
+.divider__plus {
+    margin: 0 auto;
+    text-align: center;
+
+    .middle{
+        color:$black;
+        font-weight: 300;
+    }
+
+    p {
+        display: block;
+        border-bottom:1px solid $dark-grey;
+        line-height: 0;
+        font-weight: bold;
+        margin: 0 0 25px 0;
+    }
+    span {
+        background:$white;
+        position:relative;
+        left:-6px;
+        padding: 0 20px;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.tier2 {
+    z-index: 2;
+    position: relative;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.img-center{
+    margin:0 auto;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.img-replace {
+    /* replace text with a background-image */
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $black;
+    padding-bottom: 75px !important;
+}
+
+.white-bg {
+    background: #fff;
+}
+
+.gold-bg {
+    background: $primary-color;
+}
+
+.black-bg {
+    background: $black;
+}
+
+.light-grey-bg {
+    background-color: $lighter-grey;
+}
+
+.grey-bg {
+    background-color: $grey;
+}
+
+.white {
+    color: $white;
+}
+.gold {
+    color: $primary-color;
+}
+.single-image {
+    img {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+.dual-img {
+    img {
+        width: 100%;
+    }
+}
+
+.background-overlay-black {
+    background-color: #2D2D2D;
+    opacity: .7;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.reverse-angle {
+    z-index: 4;
+}
+
+.angle-top {
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 30px solid white;
+}
+
+.angle-bottom {
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid white;
+}
+
+.angle-top-bottom {
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 30px solid white;
+}
+
+.angle-bottom-top {
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid white;
+}
+
+.angle-bottom-nav {
+    content: ' ';
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid white;
+}
+
+.footer__dots{
+    color:$primary-color;
+    text-align:center;
+    margin:0 0 20px;
+    display: inline-block;
+}
+
+
+.single__image{
+    position: relative;
+    margin-bottom: 168px;
+
+    img{
+        position: absolute;
+        top:-39px;
+        left:50%;
+        @include transform(translateX(-50%));
+    }
+}
+.inner{
+    &-sm{
+        padding:25px 0;
+        position: relative;
+        display: table;
+        width: 100%;
+    }
+    &-md{
+        padding:40px 0;
+        position: relative;
+        display: table;
+        width: 100%;
+    }
+    &-lg{
+        padding:70px 0;
+        position: relative;
+    }
+}
+
+.circle-boarder{
+    border:3px solid $white;
+    border-radius:50%;
+    padding:15px;
+}
+
+.mobile-space-sm{
+    padding-top:70px;
+}
+.mobile-space-tb{
+    padding:70px 0;
+}
+
+.space-sm{
+    display: table;
+    width:100%;
+    padding-top:25px;
+}
+
+.space-lg{
+    padding-top:100px;
+}
+
+.space-desktop-lg{
+    padding-top:0;
+}
+
+@include breakpoint(tablet) {
+
+    .container-push-xs {
+        min-height: 325px;
+    }
+
+    .angle-top-bottom {
+        bottom: 0;
+        border-top: 35px solid transparent;
+    }
+
+    .angle-bottom-top {
+        top: 0;
+        border-bottom: 35px solid transparent;
+    }
+
+    .angle-bottom-nav {
+        top: 0;
+        border-bottom: 35px solid transparent;
+    }
+    .angle-top {
+        top: -35px;
+        border-top: 35px solid transparent;
+    }
+    .angle-bottom {
+        bottom: -35px;
+        border-bottom: 35px solid transparent;
+    }
+    .footer__dots{
+        margin:50px 0;
+    }
+
+}
+
+@include breakpoint(laptop) {
+    .space-sm{
+        padding-top:40px;
+    }
+    .space-desktop-lg{
+        padding-top:100px;
+    }
+    .mobile-space-sm{
+        padding-top:0;
+    }
+    .mobile-space-tb{
+        padding:0;
+    }
+    .inner{
+        &-lg{
+            padding:70px 0;
+        }
+        &-md{
+            padding:50px 0;
+        }
+        &-sm {
+            padding: 40px 0;
+        }
+    }
+    .angle-top-bottom {
+        bottom: 0;
+        border-top: 60px solid transparent;
+    }
+
+    .angle-bottom-top {
+        top: 0;
+        border-bottom: 60px solid transparent;
+    }
+
+    .angle-bottom-nav {
+        top: 0;
+        border-bottom: 60px solid transparent;
+    }
+    .angle-top {
+        top: -60px;
+        border-top: 60px solid transparent;
+    }
+    .angle-bottom {
+        bottom: -60px;
+        border-bottom: 60px solid transparent;
+    }
+    .footer__dots{
+        margin:55px 0 20px;
+    }
+}
+
+@include breakpoint(desktop) {
+    .inner{
+        &-lg{
+            padding:100px 0;
+        }
+    }
+    .container-push {
+        min-height: 540px;
+    }
+    .container-push-sm, .container-push-xs {
+        min-height: 450px;
+    }
+    .angle-top-bottom {
+        bottom: 0;
+        border-top: 80px solid transparent;
+    }
+
+    .angle-bottom-top {
+        top: 0;
+        border-bottom: 80px solid transparent;
+    }
+    .angle-top {
+        top: -80px;
+        border-top: 80px solid transparent;
+    }
+    .angle-bottom {
+        bottom: -80px;
+        border-bottom: 80px solid transparent;
+    }
+    .sv-wrapper{
+        padding:0;
+    }
+}

@@ -1,0 +1,20 @@
+/***************************************************************************/
+/* Rev Plugin CSS ****************************************************/
+/***************************************************************************/
+.erinyen.tp-title-wrap{
+  min-height: 0;
+  line-height: 0;
+}
+.tp-banner-container {
+  background-color:#fff;
+  width:100%;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+.tp-banner{
+  width:100%;    // MUST BE THE SAME AS IN THE OPTIONS <strong>startwidth</strong>
+  height:100%;    // MUST BE THE SAME AS IN THE OPTIONS <strong>startheight</strong>
+  position:relative;
+  // overflow:hidden;
+}

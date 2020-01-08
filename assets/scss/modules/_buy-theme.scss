@@ -1,0 +1,107 @@
+.buy__container{
+  display: table;
+  text-align: center;
+  padding:0;
+  margin:0 auto;
+  color:#fff;
+
+  h2{
+	font-size: 24px;
+	margin-bottom: 40px;
+	font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  p{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 40px;
+    font-weight: 500;
+    font-family: $courier;
+  }
+  .buy-theme-sm{
+    margin:0 auto;
+    padding:0 45px;
+    display: table;
+    width: 100%;
+
+    h4{
+      margin-bottom: 40px;
+      display: block;
+      vertical-align: baseline;
+      line-height: 27px;
+      font-size:18px;
+      position: relative;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+// Displays greater than 768px
+@include breakpoint(tablet) {
+  .buy__container{
+    padding:0 30px;
+    max-width: 1160px;
+
+    h2{
+      font-size: 32px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .buy-theme-sm{
+      padding:0;
+
+    }
+  }
+}
+
+// Displays greater than 992px
+@include breakpoint(laptop) {
+  .buy__container{
+    display: block;
+    padding:0;
+    h2{
+      font-size: 40px;
+    }
+    p{
+      font-size: 21px;
+      line-height: 28px;
+    }
+    .buy-theme-sm{
+      padding:0;
+      h4{
+        display: block;
+        margin-right:40px;
+        top:2px;
+      }
+
+    }
+  }
+}
+
+// Displays greater than 1200px
+@include breakpoint(desktop) {
+  .buy__container{
+    h2{
+      font-size: 46px;
+    }
+    p{
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .buy-theme-sm{
+      h4 {
+        display: inline;
+      }
+    }
+  }
+}
+
+// Displays greater than 1600px
+@include breakpoint(desktopXL) {
+
+
+
+}

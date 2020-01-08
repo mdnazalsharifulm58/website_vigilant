@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Title block allowing child pages to override -->
+    <title>Vigilant Software</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="The Shave HTML5 Barbershop theme" />
+    <meta name="keywords" content="fullscreen image, grid layout, isotope grid, transition, css3" />
+    <meta name="author" content="Spencer Bigum" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Style block allowing child pages to inject their own styles -->
+    <!-- Styles -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <!--[if IE 9]>
+        <link href="assets/css/shave-ie9-styles.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <![endif]-->
+</head>
+
+<body class="loading">
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <!--
+    #################################
+        - Header Section -
+    #################################
+    -->
+    <header id="header" class="nav-shadow">
+        <!--company name-->
+        <a id="sv__logo" href="index.html">
+            <div class="sv__logo--img">
+              <!-- replace with white logo png version -->
+               <img class="img-responsive logo-white" src="assets/images/logo/vigilant_s.png" alt="Vigilant Software logo white" />
+               <!-- replace with black logo png version -->
+               <img class="img-responsive logo-black" src="assets/images/logo/vigilant_s-white.png" alt="Vigilant Software logo dark" />
+            </div>
+        </a>
+        <!-- Dropdown Nav -->
+        <div class="cd-dropdown-wrapper open-to-left">
+            <!-- Menu -->
+            <a href="#" class="cd-dropdown-trigger">Menu</a>
+            <nav class="cd-dropdown">
+                <!-- Company name -->
+                <h2>Vigilant</h2>
+                <a href="#0" class="cd-close">Close</a>
+                <!-- Nav content -->
+                <ul class="cd-dropdown-content">
+                    <!-- Book now btn for mobile -->
+                    <li class="mobile-modal book-now-m">
+                        <a data-toggle="modal" data-target="#bookNowModal">Demo</a>
+                    </li>
+
+                    <!--    <li class="single-item"><a href="approach.html">Our Approach</a></li>  -->
+                    <li class="single-item"><a href="about.html">About Us</a></li>
+                    <li class="single-item"><a href="careers.html">Careers</a></li>
+                    <li class="single-item"><a href="blog-index.html">Blog & News</a></li>
+                </ul>
+                <!-- .cd-dropdown-content -->
+            </nav>
+            <!-- end nav -->
+        </div>
+        <!-- end cd-wrapper -->
+        <!-- Book now button -->
+        <div class="nav__book hidden-xs">
+            <a id="phone"  href="#"  class="quick-link white book__nav"> Support</a>
+          <!--  <div id="hours" class="quick-link white"><a href="#"><i class="fa fa-clock-o"></i></a></div>   -->
+            <a href="#" class="book__nav" data-toggle="modal" data-target="#bookNowModal">Demo</a>
+        </div>
+    </header>
+    <!-- end header -->
+    <!--
+    #################################
+        - Main Shave Content -
+    #################################
+    -->
+    <main class="sv__main--content">
+        <!--
+        #################################
+         - Blog -
+        #################################
+        -->
+        <div class="section container-fluid tier2 white-bg">
+            <div class="row sv__container--sm">
+                <div class="col-xs-12 inner__header--sm">
+                    <h2>Vigilant Blog</h2>
+                    <h3>Coming Soon!</h3>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- Blog Article List begin
+        <div class="section container-fluid no-padding blog-container">
+            <div class="row no-margin">
+                <article class="col-xs-12 col-sm-6 no-padding post-thumb">
+                    <div class="post-thumb-img" style="background-image: url('http://placehold.it/1300x813')"></div>
+                    <a class="post-thumb-link" href="blog-details.html"></a>
+                    <div class="post-thumb-content">
+                        <div class="post-thumb-meta">
+                            <span class="post-thumb-category">
+                        <a href="#" rel=" category tag">Haircuts</a>
+                    </span>
+                            <span class="post-thumb-time"><i class="fa fa-clock-o fa-lg"></i>June 30, 2018</span>
+                        </div>
+                        <h2 class="post-thumb-title"><a href="blog-details.html">Wet vs. Dry Cuts</a></h2>
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-6 no-padding post-thumb">
+                    <div class="post-thumb-img" style="background-image: url('http://placehold.it/1300x813')"></div>
+                    <a class="post-thumb-link" href="blog-details.html"></a>
+                    <div class="post-thumb-content">
+                        <div class="post-thumb-meta">
+                            <span class="post-thumb-category">
+                        <a href="#" rel=" category tag">Haircuts</a>
+                    </span>
+                            <span class="post-thumb-time"><i class="fa fa-clock-o fa-lg"></i>July 22, 2018</span>
+                        </div>
+                        <h2 class="post-thumb-title"><a href="blog-details.html">Time Between Cuts</a></h2>
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-6 no-padding post-thumb">
+                    <div class="post-thumb-img" style="background-image: url('http://placehold.it/1300x813')"></div>
+                    <a class="post-thumb-link" href="blog-details.html"></a>
+                    <div class="post-thumb-content">
+                        <div class="post-thumb-meta">
+                            <span class="post-thumb-category">
+                        <a href="#" rel=" category tag">Shave</a>
+                    </span>
+                            <span class="post-thumb-time"><i class="fa fa-clock-o fa-lg"></i>July 1, 2018</span>
+                        </div>
+                        <h2 class="post-thumb-title"><a href="blog-details.html">After the Shave</a></h2>
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-6 no-padding post-thumb">
+                    <div class="post-thumb-img" style="background-image: url('http://placehold.it/1300x813')"></div>
+                    <a class="post-thumb-link" href="blog-details.html"></a>
+                    <div class="post-thumb-content">
+                        <div class="post-thumb-meta">
+                            <span class="post-thumb-category">
+                        <a href="#" rel=" category tag">Style</a>
+                    </span>
+                            <span class="post-thumb-time"><i class="fa fa-clock-o fa-lg"></i>June 12, 2018</span>
+                        </div>
+                        <h2 class="post-thumb-title"><a href="blog-details.html">Date Night Style Tips</a></h2>
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-6 no-padding post-thumb">
+                    <div class="post-thumb-img" style="background-image: url('http://placehold.it/1300x813')"></div>
+                    <a class="post-thumb-link" href="blog-details.html"></a>
+                    <div class="post-thumb-content">
+                        <div class="post-thumb-meta">
+                            <span class="post-thumb-category">
+                        <a href="#" rel=" category tag">Products</a>
+                    </span>
+                            <span class="post-thumb-time"><i class="fa fa-clock-o fa-lg"></i>July 15, 2018</span>
+                        </div>
+                        <h2 class="post-thumb-title"><a href="blog-details.html">Top 5 Hair products</a></h2>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!-- End blog -->
+    </main>
+    <!-- end main -->
+    <!--
+    #################################
+        - Footer -
+    #################################
+    -->
+    <footer class="loading">
+        <div class="sv__container--md">
+            <!-- Footer Wrapper -->
+            <div class="footer__wrapper">
+                <div class="row footer__row">
+                    <!-- Footer Logo -->
+                    <div class="footer__logo no-padding">
+                        <div class="logo__container">
+                            <div class="footer__logo--img">
+                               <!-- replace with white logo png version -->
+                <img class="img-responsive logo-white" src="assets/images/logo/footer-logo.png" alt="Vigilant Software" />
+                            </div>
+
+                            <div class="social-footer  centerText">
+                                <ul>
+                                    <li><a href="https://www.linkedin.com/company/vigilantlabels/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://twitter.com/VigilantLabels"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCMNtLXNgs7XLM7pJXX5OFxw"><i class="fa fa-youtube-play"></i></a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Footer Description -->
+                    <div class="footer__desc">
+                        <!-- email container -->
+                        <div class="email__wrapper">
+                            <!-- email form -->
+                            <div class="email__form form-group">
+                                <form>
+                                    <!-- email input -->
+                                    <input type="email" class="form-control email__form--input" id="footer-email" name="EMAIL" required placeholder="Your Email Address">
+                                    <!-- subtext to email -->
+                                    <div class="email__offers">
+                                        <p>Stay updated on the latest + special offers and more.</p>
+                                    </div>
+                                    <!-- end sub-text -->
+                                    <button type="submit" class="btn book-now-btn form-btn">Submit</button>
+                                </form>
+                            </div>
+                            <!-- end email form -->
+                        </div>
+                        <!-- end email container -->
+                        <!-- address container -->
+                        <div class="row footer__contact">
+                            <!-- address -->
+                            <div class="col-xs-12 col-sm-6 footer__address no-padding">
+                                <p>950 East State Highway 114</p>
+                                <p>Suite 160</p>
+                                <p>Southlake, TX 76092</p>
+
+                            </div>
+                            <!-- email -->
+                            <div class="col-xs-12 col-sm-6 contact no-padding">
+                                <a class="email" href="mailto:hello@theshave.com">sales@vigilantlabels.com</a>
+                                <a class="phone" href="tel:859-797-2331">859-797-2331</a>
+                            </div>
+
+
+                        </div>
+
+                           <div class="row social-footer">
+
+                            <!-- end col -->
+                            <!-- copyright -->
+                            <div class="col-12 text-left">
+                                <div class="copyright">
+                                    <p>Copyright &copy; Vigilant Labels 2018 • All rights reserved</p>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end address container -->
+                        <!-- social media -->
+
+                        <!-- end social media -->
+                    </div>
+
+
+
+                    <!-- end right side -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end container md -->
+    </footer>
+    <!-- end foother -->
+    <!-- Book now modal -->
+    <div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row">
+                    <!-- Modal Section 1 -->
+                    <div class="col-xs-12 no-padding modal-info">
+                        <!-- Mobile close btn (hidden on larger screens) -->
+                        <button type="button" class="modal-close" aria-label="Close"><i class="fa fa-times"></i>
+                        </button>
+                        <!-- Section 1 content -->
+                        <div class="modal-bookNow"  style="background-color: #0773BB">
+                            <h3>Contact Info</h3>
+                            <h5>Start your journey to a safer hospital!</h5>
+                        </div>
+                        <!-- end modal content -->
+                    </div>
+                    <!-- end modal section 1 -->
+                    <!-- Modal Section 2 new -->
+                     <div class="modal-body">
+                    <div class="col-xs-12 no-padding">
+                        <div class="modal-form">
+                           <div class="col-xs-12"  style="color:blue">
+                            <div class="input__container">
+                                <span class="icon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="user-name" id="contact-name" name="NAME" required="" placeholder="Name">
+                            </div>
+                            <div class="input__container">
+                                <span class="icon"><i class="fa fa-envelope"></i></span>
+                                <input type="email" class="user-email" id="contact-email" name="EMAIL" required="" placeholder="Email">
+                            </div>
+                            <div class="input__container">
+                                <span class="icon"><i class="fa fa-phone"></i></span>
+                                <input type="text" class="user-phone" id="contact-phone" name="PHONE" required="" placeholder="Phone">
+                            </div>
+
+
+                              <div class="input__container">
+                                 <span class="icon"><i class="fa fa-pencil "></i></span>
+                            <textarea id="contact-message" class="user-text" name="MESSAGE" required="" placeholder="Message"></textarea>
+                            </div>
+                             <div class="input__container">
+                            	<button type="submit" class="btn book-now-btn btn-block form-btn" style="color:0773BB">Submit</button>
+                        	 </div>
+
+
+
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 form__right pencil-contact">
+
+                        </div>
+
+
+                        </div>
+                        <!-- end modal-form -->
+                    </div>
+                </div>
+                    <!-- end modal section 2 -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end modal-content -->
+        </div>
+        <!-- end modal-dialog -->
+    </div>
+    <!-- End Modal -->
+    <!-- shave shop phone -->
+    <div class="sv-toast" data-toast="phone">
+        <div class="alert alert-success sv-phone" role="alert">
+            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2>Still using a phone?</h2>
+            <p>Feel free to call us.</p>
+            <img class="img-responsive" src="assets/images/phone.jpg" alt="The Shave Phone Number" />
+            <a href="" class="tele">859-797-2331</a>
+        </div>
+    </div>
+    <!-- end shop pimes -->
+    <!-- shave shop times -->
+    <div class="sv-toast" data-toast="hours">
+        <div class="alert alert-success sv-hours" role="alert">
+            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="toast-title">
+                <h2>The Shop hours</h2>
+                <h6>We're open</h6>
+            </div>
+            <div class="toast-hours">
+                <p><span>Mon - Fri :</span> 9:00 AM - 9:00 PM</p>
+                <p><span>Sat :</span> 9:00 AM - 2:00 PM</p>
+            </div>
+        </div>
+    </div>
+    <!-- end shop times -->
+    <!-- Plugins -->
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/scripts/jquery.menu-aim.js"></script>
+    <script src="assets/scripts/modernizr.min.js"></script>
+    <script src="assets/scripts/bootstrap.min.js"></script>
+    <script src="assets/scripts/skrollr.min.js"></script>
+    <script src="assets/scripts/imagesloaded.min.js"></script>
+    <script src="assets/scripts/jquery-placeholder.min.js"></script>
+    <script src="assets/scripts/jquery.prefetch.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="assets/scripts/debug.addIndicators.min.js"></script>
+    <!-- Settings -->
+    <script src="assets/scripts/window-settings.min.js"></script>
+    <script src="assets/scripts/nav-settings.min.js"></script>
+    <script src="assets/scripts/main-settings.min.js"></script>
+    <!-- Script block allowing child pages to inject their own scripts -->
+
+<script type="text/javascript"> var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"5b25dcc861bf912ba4d1d147b164537da0366ad2a47e6bc756c5300fb971f05d1a2010ab7b6727677d37b27582c0e9c4", values:{},ready:function(){}}; var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true; s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>"); </script>
+</body>
+
+</html>

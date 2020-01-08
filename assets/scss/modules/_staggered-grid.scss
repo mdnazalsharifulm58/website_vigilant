@@ -1,0 +1,320 @@
+/***************************************************************************/
+/* Staggered Gird ****************************************************/
+/***************************************************************************/
+.staggered__container {
+    max-width: 970px;
+    background: $white;
+    margin: 0 auto;
+    padding:0 15px;
+    text-align: center;
+    h2 {
+        font-size: 49px;
+        line-height: 55px;
+        margin-bottom: 16px;
+        margin-top: 15px;
+    }
+    h6 {
+        font-size: 18px;
+        color: $primary-color;
+        font-family: $courier;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+    .sub-copy {
+        text-align: center;
+    }
+}
+
+.box-link {
+    top: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: $black;
+    .content {
+        position: relative;
+        z-index: 100;
+        background: $white;
+        margin: 6.525em 15.5%;
+        overflow: hidden;
+        p {
+            color: $black;
+            margin: 0;
+        }
+        .clock {
+            padding-top: 0;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+        h3 {
+            line-height: 28px;
+        }
+    }
+    .box-overlay {
+        opacity: 0;
+        width: 99.99%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $black;
+        z-index: 3;
+        @include transition(opacity .25s);
+    }
+    .animate-off {
+        opacity: 1;
+        position: relative;
+        left: 16px;
+        @include transition(transform .2s ease-in-out, opacity 300ms ease-out);
+    }
+    .animate-on {
+        color: $primary-color;
+        opacity: 0;
+        position: relative;
+        @include transition(transform .2s ease-in-out, opacity 300ms ease-out);
+        @include transform(translateX(-200px));
+    }
+    .no-touch &:hover {
+        .box-overlay {
+            opacity: .5;
+        }
+        .animate-off {
+            opacity: 0;
+            @include transform(translateX(200px));
+        }
+        .animate-on {
+            opacity: 1;
+            right: 3px;
+            @include transform(translateX(-50%));
+        }
+    }
+    i {
+        padding-top: 20px;
+        margin: 0;
+        width: auto;
+    }
+    .offset__container {
+        bottom: -25px;
+        left: 50%;
+        @include transform(translateX(-50%));
+        .offset__btn {
+            padding: 15px 0;
+            height: 55px;
+            width: 40%;
+            overflow: hidden;
+        }
+        i {
+            padding: 0;
+        }
+        .animate-off {
+            left: 11px;
+        }
+    }
+}
+
+.box-lg {
+    .content {
+        padding: 1.5em;
+        h3 {
+            margin: 0 auto;
+            max-width: 75%;
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    img {
+        display: block;
+        position: absolute;
+        top: 0;
+        min-height: 100%;
+        min-width: 100%;
+    }
+}
+
+.box-sm {
+    background-color: #eeeeee;
+    .content {
+        padding: 25px 10%;
+        background-color: $grey;
+    }
+    img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+
+.box-sm-hours {
+    width: 100%;
+    .content {
+        position: relative;
+        padding: 20px 8% 38px;
+        font-size: 16px;
+    }
+    img {
+        display: block;
+        position: absolute;
+        top: 0;
+        right:0;
+        min-height: 100%;
+        min-width: 100%;
+    }
+    p {
+        font-family: $heading-font;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 24px;
+        padding-top: 10px;
+    }
+}
+
+.box-sm-tall {
+    width: 100%;
+    img {
+        display: block;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.box-last {
+    width: 100%;
+    .content {
+        padding: 40px 15px;
+        h3 {
+            margin: 0 auto;
+            max-width: 75%;
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    img {
+        display: block;
+        position: absolute;
+        top: 0;
+        min-height: 100%;
+        min-width: 100%;
+    }
+}
+
+// Displays greater than 600px
+@include breakpoint(tablet) {
+    .staggered__container {
+        padding:0 15px;
+        h2 {
+            font-size: 72px;
+            line-height: 80px;
+        }
+    }
+    .box {
+        float: right;
+        margin-bottom: 0;
+        .content {
+            margin: 7.525em 19.5%;
+        }
+    }
+    .box-lg {
+        width: 65.71166%;
+        margin-bottom: 3%;
+        .content {
+            padding: 2em;
+            h3 {
+                margin: 0 auto;
+                max-width: 75%;
+                margin-bottom: 20px;
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+    }
+    .box-sm {
+        width: 31.28834%;
+        margin-top: 225px;
+        margin-left: 3%;
+        .content {
+            padding: 52px 10.8% 41px;
+            margin: 0;
+            p {
+                font-size: 22px;
+                line-height: 28px;
+                font-weight: 500;
+            }
+        }
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-width: 0;
+            min-height: 0;
+            overflow: hidden;
+        }
+    }
+    .box-sm-hours {
+        width: 31.28834%;
+        margin: 0 0 3.06748% 3.06748%;
+        .content {
+            margin: 10em 20%;
+            padding: 20px 8% 45px;
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    .box-sm-tall {
+        width: 31.28834%;
+        float: left;
+    }
+    .box-last {
+        width: 65.65146%;
+        .content {
+            padding: 2em;
+            h3 {
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+// Displays greater than 992px
+@include breakpoint(laptop) {
+    .staggered__container {
+        padding:0;
+        h2 {
+            font-size: 97px;
+            line-height: 105px;
+        }
+    }
+}
+
+// Displays greater than 1200px
+@include breakpoint(desktop) {}
+
+// Displays greater than 1600px
+@include breakpoint(desktopXL) {}

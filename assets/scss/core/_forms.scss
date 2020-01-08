@@ -1,0 +1,155 @@
+/***************************************************************************/
+/* Forms ****************************************************/
+/***************************************************************************/
+.contact__form {
+    padding: 0 30px;
+    &--wrapper {
+        margin: 80px auto 30px;
+    }
+    &--container {
+        margin: 40px auto 0 auto;
+    }
+    &--title {
+        h3 {
+            text-align: center;
+        }
+    }
+}
+.form__left,
+.form__right {
+    padding: 0;
+}
+.form__right {
+    overflow: hidden;
+}
+.input__container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.icon {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 52px;
+    height: 52px;
+    @include transition(all .5s);
+    i {
+        text-align: center;
+        padding-top: 15px;
+        font-size: 21px;
+        display: block;
+        color: $darker-grey;
+    }
+    &.focused {
+        i {
+            color: $primary-color;
+        }
+    }
+}
+.user-name,
+.user-email,
+.user-phone {
+    height: 52px;
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    border: 0;
+    padding-left: 45px;
+    margin-bottom: 30px;
+    background-color: $grey;
+    border-bottom: 3px solid $dark-grey;
+    @include transition(all .5s);
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $lighter-grey;
+        border-bottom: 3px solid $primary-color;
+    }
+    &::-webkit-input-placeholder {
+        color: $subtext-dk-grey;
+    }
+    &::-moz-placeholder {
+        color: $subtext-dk-grey;
+    }
+    &:-moz-placeholder {
+        color: $subtext-dk-grey;
+    }
+    &:-ms-input-placeholder {
+        color: $subtext-dk-grey;
+    }
+}
+.user-text {
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    border: 0;
+    padding: 0 45px;
+    padding-top: 13px;
+    margin-bottom: 30px;
+    height: 216px;
+    background-color: $grey;
+    border-bottom: 3px solid $dark-grey;
+    @include transition(all .5s);
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $lighter-grey;
+        border-bottom: 3px solid $primary-color;
+    }
+    &::-webkit-input-placeholder {
+        color: $subtext-dk-grey;
+    }
+    &::-moz-placeholder {
+        color: $subtext-dk-grey;
+    }
+    &:-moz-placeholder {
+        color: $subtext-dk-grey;
+    }
+    &:-ms-input-placeholder {
+        color: $subtext-dk-grey;
+    }
+}
+
+@include breakpoint(tablet) {
+    .contact__form {
+        &--title {
+            h3 {
+                text-align: left;
+            }
+        }
+        &--wrapper {
+            margin: 80px auto;
+        }
+    }
+}
+
+@include breakpoint(laptop) {
+    .contact__form {
+        padding: 0 30px;
+    }
+    .contact__form--container{
+        .pencil-contact > .icon{
+            left:28px;
+        }
+    }
+    .user-text {
+        margin-left: 30px;
+    }
+    .pencil-contact {
+        i {
+            left: 30px;
+        }
+    }
+}
+
+@include breakpoint(desktop) {
+    .user-text {
+        margin-left: 30px;
+    }
+    .pencil-contact {
+        i {
+            left: 30px;
+        }
+    }
+}

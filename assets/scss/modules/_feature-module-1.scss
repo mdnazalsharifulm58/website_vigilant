@@ -1,0 +1,309 @@
+/***************************************************************************/
+/* Feature Module 1 ****************************************************/
+/***************************************************************************/
+
+@include keyframes(fadeIn) {
+    from {
+        @include transform(translateY(60px));
+        opacity: 0;
+    }
+    to {
+        @include transform(translateY(0));
+        opacity: 1;
+    }
+}
+
+.svfm1__container {
+    z-index: 3;
+    background-size: cover;
+    background-position: center center;
+}
+
+.svfm1__content {
+    padding:0;
+    margin: 40px auto 0;
+    max-width: 750px;
+    position: relative;
+    z-index: 2;
+    display: table;
+    &--offset {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+.svfm1__card {
+    display: table;
+    padding: 15px 30px;
+    margin: 0 auto;
+    opacity: 0;
+    @include transition(all .3s);
+
+    &.active0 {
+        @include animation--fadedown(0);
+    }
+    &.active1 {
+        @include animation--fadedown(.2);
+    }
+    &.active2 {
+        @include animation--fadedown(.4);
+    }
+    &.active3 {
+        @include animation--fadedown(.6);
+    }
+    figure {
+        position: relative;
+        overflow: hidden;
+        max-height: 530px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        text-align: center;
+        cursor: pointer;
+        .content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0 auto;
+            left: 0;
+            background: #fff;
+        }
+        h2 {
+            word-spacing: -0.15em;
+            font-weight: 700;
+            margin: 0;
+            background: $white;
+            display: block;
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 23px 20px 6px;
+            color: $black;
+            letter-spacing: 3px;
+            position: relative;
+            bottom: 0;
+            left: 0;
+        }
+        p {
+            text-align: center;
+            margin: 0;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+        }
+        img {
+            position: relative;
+            display: block;
+            height: 100%;
+            max-width: 100%;
+        }
+        figcaption {
+            padding: 2em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            & > a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1000;
+                text-indent: 200%;
+                white-space: nowrap;
+                font-size: 0;
+                opacity: 0;
+            }
+            &::before,
+            &::after {
+                pointer-events: none;
+            }
+        }
+    }
+
+    &.svfm1__2col{
+
+        .svfm1__2col--item{
+            margin:0;
+        }
+
+        &:nth-child(1){
+
+            .svfm1__2col--item{
+                margin:0 0 0 auto;
+            }
+        }
+
+        figure{
+            max-width:370px;
+            max-height:568px;
+        }
+    }
+}
+
+//Hover effects
+.svfm1__card--effect {
+    margin: 0 auto;
+    h2,
+    img {
+        @include transition(opacity 0.35s, transform 0.35s);
+    }
+    img {
+        width: 100%;
+    }
+    h2 {
+        @include transition(opacity 0.35s, transform 0.35s);
+    }
+    //secondary text animation setup
+    p {
+        padding: 10px 30px 20px;
+        text-transform: none;
+        font-size: 16px;
+        opacity: 1;
+        @include transition(opacity 0.35s, transform 0.35s);
+    }
+    //moves image up on hover
+    .no-touch &:hover img {
+        @include transform(translate3d(0, -80px, 0));
+    }
+    //reveal p tag on hover
+    .no-touch &:hover p {
+        opacity: 1;
+    }
+}
+
+// Displays greater than 768px
+@include breakpoint(tablet) {
+    .svfm1__content {
+        padding:0 15px;
+        max-width: 800px;
+        &--offset {
+            position: absolute;
+            bottom: -175px;
+            left: 0;
+            width: 100%;
+        }
+    }
+    .svfm1__card {
+        padding: 15px;
+        figure {
+            max-width: 343px;
+            max-height: 390px;
+            p {
+                padding: 10px 45px 20px;
+            }
+            h2 {
+                bottom: 21px;
+            }
+            figcaption{
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+        }
+    }
+}
+
+// Displays greater than 992px
+@include breakpoint(laptop) {
+
+    .svfm1__content {
+        padding:0;
+        max-width: 1200px;
+    }
+    .svfm1__card {
+        figure {
+            max-width: 343px;
+            max-height: 455px;
+            .content {
+                height: 85px;
+            }
+            h2 {
+                position: absolute;
+                padding: 29px 20px;
+                bottom: 0;
+                font-size: 18px;
+            }
+            p {
+                padding: 10px 30px 20px;
+                position: absolute;
+            }
+        }
+    }
+    .svfm1__card--effect {
+        p {
+            padding: 10px 30px 20px;
+            opacity: 0;
+            @include transform(translate3d(0, 80px, 0));
+        }
+        img {
+            width: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            @include transform(translate3d(0, 0px, 0));
+        }
+        &:hover img {
+            @include transform(translate3d(0, -80px, 0));
+        }
+        &:hover h2 {
+            @include transform(translate3d(0, -70px, 0));
+        }
+        //reveal p tag on hover
+        &:hover p {
+            opacity: 1;
+            @include transform(translate3d(0, -15px, 0));
+        }
+    }
+}
+
+// Displays greater than 1200px
+@include breakpoint(desktop) {
+    .svfm1__content {
+        max-width: 1200px;
+        margin-top:60px;
+    }
+    .svfm1__card {
+        figure {
+            max-width: 445px;
+            max-height: 588px;
+            .content {
+                height: 100px;
+            }
+            h2 {
+                padding: 37px 20px;
+            }
+        }
+        &:nth-child(odd) {
+            .svfm1__card--effect {
+                float: none;
+            }
+        }
+        &:nth-child(even) {
+            .svfm1__card--effect {
+                float: none;
+            }
+        }
+    }
+    .svfm1__card--effect {
+        margin: 0 auto;
+        p {
+            @include transform(translate3d(0, 80px, 0));
+        }
+        &:hover h2 {
+            @include transform(translate3d(0, -70px, 0));
+        }
+    }
+}
+
+// Displays greater than 1600px
+@include breakpoint(desktopXL) {
+    .svfm1__card--effect {
+        &:hover h2 {
+            @include transform(translate3d(0, -50px, 0));
+        }
+    }
+}

@@ -1,0 +1,146 @@
+/***************************************************************************/
+/* Effects ****************************************************/
+/***************************************************************************/
+.loading {
+    background-color: #fff;
+}
+
+.parallax__background {
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    &.image__content {
+        height: 200px;
+    }
+}
+
+.icon-up-down {
+    .animate-down-1 {
+        opacity: 1;
+        position: relative;
+        @include transition(transform .2s ease-in-out, opacity 300ms ease-out);
+    }
+    .animate-down-2 {
+        color: $primary-color;
+        opacity: 0;
+        position: relative;
+        @include transition(transform .2s ease-in-out, opacity 300ms ease-out);
+        @include transform(translateY(-200px));
+    }
+    .top-i,
+    .bottom-i {
+        position: absolute;
+        left: 68%;
+        top: 0;
+    }
+    .no-touch &:hover {
+        .animate-down-1 {
+            opacity: 0;
+            @include transform(translateY(200px));
+        }
+        .animate-down-2 {
+            opacity: 1;
+            @include transform(translateY(-10%));
+        }
+    }
+}
+
+.card-shadow-lt {
+    box-shadow: 0 1px 2px rgba(#000, .08);
+    @include transition(box-shadow .2s);
+    .no-touch &:hover {
+        box-shadow: 0 1px 10px rgba($black, .3);
+    }
+}
+
+.card-shadow-md {
+    box-shadow: 0 1px 2px rgba(#000, .23);
+    @include transition(box-shadow .2s);
+    .no-touch &:hover {
+        box-shadow: 0 5px 15px rgba($black, .3);
+    }
+}
+
+.card-shadow-dk {
+    box-shadow: 0 1px 2px rgba(#000, .23);
+    @include transition(box-shadow .2s);
+    .no-touch &:hover {
+        box-shadow: 0 5px 15px rgba($black, .5);
+    }
+}
+
+// Displays greater than 768px
+@include breakpoint(tablet) {
+    .loading {
+        background-color: #fff;
+    }
+    .parallax__background {
+        &.image__content {
+            height: 500px;
+        }
+    }
+}
+
+// Displays greater than 992px
+@include breakpoint(laptop) {
+    .parallax__background {
+        background-attachment: fixed;
+        &.image__content {
+            height: 600px;
+        }
+    }
+    .plus-effect {
+        .hover-container {
+            position: relative;
+        }
+        a {
+            position: relative;
+        }
+        i {
+            color: $primary-color;
+            top: 50%;
+            left: 25%;
+            @include transform(translateX(-25%) translateY(-50%));
+            font-size: 60px;
+            position: absolute;
+            opacity: 0;
+            @include transition(all .3s);
+        }
+        .plus-hover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            @include transition(all .3s);
+            background: rgba(15, 15, 15, 0);
+            z-index: 1;
+        }
+        &:hover {
+            i {
+                top: 50%;
+                left: 50%;
+                @include transform(translateX(-50%) translateY(-50%));
+                opacity: 1;
+            }
+            .plus-hover {
+                background: rgba(15, 15, 15, .65);
+            }
+        }
+    }
+}
+
+// Displays greater than 1200px
+@include breakpoint(desktop) {}
+
+// Displays greater than 1600px
+@include breakpoint(desktopXL) {
+    .parallax__background {
+        background-attachment: fixed;
+        &.image__content {
+            height: 800px;
+        }
+    }
+}

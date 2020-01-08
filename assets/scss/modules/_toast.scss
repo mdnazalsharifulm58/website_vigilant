@@ -1,0 +1,127 @@
+.sv-toast{
+  position: fixed;
+  top:100px;
+  right:0;
+  opacity: 0;
+  z-index: 1050;
+  height:145px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba($black, .5);
+  border-left:15px solid $primary-color;
+  @include transition( all .4s cubic-bezier(0.4, 0, 0.2, 1));
+  @include transform(translateX(100%)translateY(0));
+  background: $white;
+
+  &.in{
+    opacity: 1;
+    @include transform(translateX(-3%)translateY(0));
+
+    .sv-hours,
+    .sv-phone{
+      @include transform(translateX(0)translateY(0));
+    }
+  }
+  &.out{
+    opacity: 0;
+    @include transition( all .8s cubic-bezier(0.4, 0, 0.2, 1));
+    @include transform(translateX(-3%)translateY(-25%));
+  }
+  button.close{
+    z-index: 2;
+    position: absolute;
+    font-size: 38px;
+    right:12px;
+    top:5px;
+    &:focus{
+      outline:none;
+    }
+  }
+}
+
+.sv-phone,
+.sv-hours{
+  width:460px;
+  height:100%;
+  border:none;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 0;
+  padding-left:25px;
+  @include transition( all .4s cubic-bezier(0.4, 0, 0.2, 1));
+  @include transform(translateX(100%)translateY(0));
+}
+.sv-hours{
+  width: 100%;
+  background: transparent;
+  padding:0;
+
+  .toast-hours{
+    width:60%;
+    color:$black;
+    border-left:1px solid #969696;
+    display: inline-block;
+    float:left;
+    height:100%;
+    padding-left:25px;
+    padding-top:25px;
+    p{
+      font-family:$ubuntu;
+      color:$darker-grey;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    span{
+      font-weight: 500;
+    }
+  }
+  .toast-title{
+    padding-left:25px;
+    padding-top:25px;
+    width:40%;
+    color:$black;
+    float:left;
+    display: inline-block;
+    h2{
+      font-size: 21px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    h6{
+      display: inline-block;
+      padding:5px;
+      background: $primary-color;
+      color:$white;
+      margin:0;
+    }
+  }
+}
+.sv-phone{
+  h2{
+    font-size: 21px;
+    width: 50%;
+    margin-top:0;
+    margin-bottom:5px;
+    color:$black;
+    letter-spacing: 2px;
+  }
+  p{
+    width:50%;
+    font-size: 16px;
+    color:$subtext-dk-grey;
+    margin-bottom:10px;
+    line-height: 18px;
+  }
+  img{
+    position: absolute;
+    top:0;
+    left:60%;
+    z-index: 0;
+    max-height: 152px;
+  }
+  .tele{
+    font-family: $ubuntu;
+    color:$black;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
