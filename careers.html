@@ -1,599 +1,601 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <!-- Title block allowing child pages to override -->
-    <title>Vigilant Software</title>
-    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Anesthesia labels and recording" />
-    <meta name="keywords" content="Anesthesia , compliance, labels, drugs, operating room, recording" />
-    <meta name="author" content="Fox Holt" />
-    <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- Style block allowing child pages to inject their own styles -->
-    <!-- Styles -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css" media="all" />
-    <!--[if IE 9]>
-        <link href="assets/css/shave-ie9-styles.min.css" rel="stylesheet" type="text/css" media="all"/>
-    <![endif]-->
-</head>
-
-<body class="loading">
-    <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
-    </div>
-    <!--
-    #################################
-        - Header Section -
-    #################################
-    -->
-    <header id="header" class="nav-shadow">
-        <!--company name-->
-        <a id="sv__logo" href="index.html">
+   <head>
+      <meta charset="utf-8" />
+      <!-- Title block allowing child pages to override -->
+      <title>Vigilant Software</title>
+      <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="description" content="Anesthesia labels and recording" />
+      <meta name="keywords" content="Anesthesia , compliance, labels, drugs, operating room, recording" />
+      <meta name="author" content="Fox Holt" />
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+      <!-- Style block allowing child pages to inject their own styles -->
+      <!-- Styles -->
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="assets/css/main.css" rel="stylesheet" type="text/css" media="all" />
+      <!--[if IE 9]>
+      <link href="assets/css/shave-ie9-styles.min.css" rel="stylesheet" type="text/css" media="all"/>
+      <![endif]-->
+   </head>
+   <body class="loading">
+      <div class="loader-wrapper">
+         <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <!--
+         #################################
+             - Header Section -
+         #################################
+         -->
+      <header id="header" class="nav-shadow">
+         <!--company name-->
+         <a id="sv__logo" href="index.html">
             <div class="sv__logo--img">
                <!-- replace with white logo png version -->
-                <img class="img-responsive logo-white" src="assets/images/logo/vigilant_s.png" alt="Vigilant Software" />
-                <!-- replace with black logo png version -->
-                <img class="img-responsive logo-black" src="assets/images/logo/vigilant_s-white.png" alt="The Shave barbershop HTML theme" />
-
-
+               <img class="img-responsive logo-white" src="assets/images/logo/vigilant_s.png" alt="Vigilant Software" />
+               <!-- replace with black logo png version -->
+               <img class="img-responsive logo-black" src="assets/images/logo/vigilant_s-white.png" alt="The Shave barbershop HTML theme" />
             </div>
-        </a>
-        <!-- Dropdown Nav -->
-        <div class="cd-dropdown-wrapper open-to-left">
+         </a>
+         <!-- Dropdown Nav -->
+         <div class="cd-dropdown-wrapper open-to-left">
             <!-- Menu -->
             <a href="#" class="cd-dropdown-trigger">Menu</a>
             <nav class="cd-dropdown">
-                <!-- Company name -->
-                <h2>Vigilant</h2>
-                <a href="#0" class="cd-close">Close</a>
-                <!-- Nav content -->
-                <ul class="cd-dropdown-content">
-                    <!-- Book now btn for mobile -->
-                    <li class="mobile-modal book-now-m">
-                        <a data-toggle="modal" data-target="#bookNowModal">Demo</a>
-                    </li>
-
-                <!--    <li class="single-item"><a href="approach.html">Our Approach</a></li>  -->
-                    <li class="single-item"><a href="about.html">About Us</a></li>
-                    <li class="single-item"><a href="careers.html">Careers</a></li>
-                    <li class="single-item"><a href="blog-index.html">Blog & News</a></li>
-                </ul>
-                <!-- .cd-dropdown-content -->
+               <!-- Company name -->
+               <h2>Vigilant</h2>
+               <a href="#0" class="cd-close">Close</a>
+               <!-- Nav content -->
+               <ul class="cd-dropdown-content">
+                  <!-- Book now btn for mobile -->
+                  <li class="mobile-modal book-now-m">
+                     <a data-toggle="modal" data-target="#bookNowModal">Demo</a>
+                  </li>
+                  <!--    <li class="single-item"><a href="approach.html">Our Approach</a></li>  -->
+                  <li class="single-item"><a href="about.html">About Us</a></li>
+                  <li class="single-item"><a href="careers.html">Careers</a></li>
+                  <li class="single-item"><a href="blog-index.html">Blog & News</a></li>
+               </ul>
+               <!-- .cd-dropdown-content -->
             </nav>
             <!-- end nav -->
-        </div>
-        <!-- end cd-wrapper -->
-        <!-- Book now button -->
-        <div class="nav__book hidden-xs">
+         </div>
+         <!-- end cd-wrapper -->
+         <!-- Book now button -->
+         <div class="nav__book hidden-xs">
             <a id="phone"  href="#"  class="quick-link white book__nav"> Support</a>
-          <!--  <div id="hours" class="quick-link white"><a href="#"><i class="fa fa-clock-o"></i></a></div>   -->
+            <!--  <div id="hours" class="quick-link white"><a href="#"><i class="fa fa-clock-o"></i></a></div>   -->
             <a href="#" class="book__nav" data-toggle="modal" data-target="#bookNowModal">Demo</a>
-        </div>
-    </header>
-    <!-- end header -->
-    <!--
-    #################################
-        - Main Shave Content -
-    #################################
-    -->
-    <main class="sv__main--content">
-        <!--
-        #################################
-                    - Prices -
-        #################################
-        -->  <div class="section container-fluid white-bg container-push">
-          	<div class="row sv__container--sm">
-          		<div class="col-xs-12 inner__header--sm">
-          			<h2>Careers</h2>
-          			<h3>We are looking for passionate and brilliant people.</h3>
-          		</div>
-          	</div>
-          </div><!-- end header -->
-          <!-- price section -->
-          <div class="section container-fluid grey-bg no-padding">
-          	<div class="angle-bottom-top" style="color: #fff;"></div><!-- pricing tab accordion -->
-          	<div class="sv__container--sm sm-fluid no-padding tier2">
-          		<div class="tabs__wrapper">
-          			<div class="tabs__content" role="tabpanel">
-          				<!-- pricing tab accordion list-->
-          				<ul class="nav nav-tabs nav-justified white-tabs" id="priceTabs" role="tablist">
-          					<li class="tab__control" id="beard-mustache" role="presentation">
-          						<a aria-controls="beard" aria-expanded="false" href="#beard" id="beard-tab" role="tab">
-          						<div class="tab-wrapper-icons">
-          							<span class="text">Sales & Marketing</span>
-          						</div></a>
-          					</li>
-          					<li class="tab__control active" id="shave" role="presentation">
-          						<a aria-controls="shaving" aria-expanded="false" href="#shaving" id="shaving-tab" role="tab">
-          						<div class="tab-wrapper-icons">
-          							<span class="text">Operations</span>
-          						</div></a>
-          					</li>
-          					<li class="tab__control" id="haircuts" role="presentation">
-          						<a aria-controls="hair-cuts" aria-expanded="false" href="#hair-cuts" id="haircuts-tab" role="tab">
-          						<div class="tab-wrapper-icons">
-          							<span class="text">Development</span>
-          						</div></a>
-          					</li>
-          				</ul><!-- end pricing tab accordion list-->
-          				<!-- tab content -->
-          				<div class="tab-content" id="myPriceContent">
-          					<!-- start breard and mustache -->
-          					<div aria-labelledby="beard-tab" class="tab-pane tab-fade" id="beard" role="tabpanel">
-          						<!-- tab header -->
-          						<div class="tab-header">
-          						<div class="headline-container">
-          							<h3>Sales & Marketing</h3>
-          						</div><img alt="The Shave Barbershop HTML Theme" class="img-responsive" src="assets/images/career.jpg"></div><!-- tab panel -->
-          						<div class="tab__panel">
-          							<div class="shave__faq--items">
-          								<ul class="shave__faq--group" id="faq">
-          									<li class="active no-padding">
-          										<a class="shave__faq--trigger" href="#">
-          										<div class="title">
-          											<h3>Inside Sales</h3>
-          										</div></a>
-          										<div class="shave__faq--content" style="display: block;">
-          											<div class="faq--wrapper">
-          												<div class="desc">
-                                    <p>Inside Sales Representative Responsibilities include the following:</p>
-<p>• Selling new business into hospitals across the U.S.</p>
-<p>• Learn and embrace a proven sales methodology that emphasizes mutual commitments</p>
-<p>• Ability to articulate our value proposition</p>
-<p>• Develop a territory plan strategy, and execute on your plan</p>
-<p>• Expanding the goodwill and the name recognition of the company in the marketplace</p>
-<p>
-  <br>
-</p>
-<p>Inside Sales Representative Required Skills:</p>
-<p>• 3+ years of experience selling into a complex environment</p>
-<p>• Exceptional Customer facing communication and presentation skills</p>
-<p>• Strong prospecting skills</p>
-<p>• Ability to confidently and sincerely communicate our value proposition</p>
-<p>• Positive attitude and a passion for having fun</p>
-<p>• Own the Mission accountable for performance</p>
-<p>• Results driven and fearless. High performers walk with a sense of purpose</p>
-<p>• Team player</p>
-<p>• Integrity and character. All actions and interactions are built on this tenet</p>
-<p>• Qualification talent the ability to qualify prospects and get to yes or no faster</p>
-<p>• Detail-oriented and strong organizational skills</p>
-<p>• Empowerment ability to make choices and transform those decisions into action</p>
-<p>• Ability to multi-task and manage tasks accordingly</p>
-<p>• Flexible and adaptive to a changing environment</p>
-<p>• Able to work in a team atmosphere as well as autonomously</p>
-<p>• Excellent computer skills, Word, Excel, Salesforce</p>
-<p>• Healthcare and information technology experience a plus</p>
-<p>
-  <br>
-</p>
-<p>Inside Sales Representative Compensation:</p>
-<p>• Sales Development Representative&nbsp;</p>
-<p>• 50K Base with Total Compensation Projection (TCP) of 100K</p>
-<p>• Location/ Travel: Ideal candidate must be willing to spend 5-10% traveling</p>
-          												</div>
-          											</div>
-          										</div>
-          									</li>
-          									<li class="no-padding">
-          										<a class="shave__faq--trigger" href="#">
-          										<div class="title">
-          											<h3>Outside Sales</h3>
-          										</div></a>
-          										<div class="shave__faq--content" style="display: block;">
-          											<div class="faq--wrapper">
-          												<div class="desc">
-                                    <p>PLEASE NOTE: ONLY Experienced Reps with Strong existing relationships with hospital administration will be considered for this opportunity. All Conversations will remain confidential.</p>
-<p>Call points include:</p>
-<p>• Director of Pharmacy</p>
-<p>• Director of Anesthesiology</p>
-<p>• Director of Compliance</p>
-<p>• Purchasing</p>
-<p>We provide top commissions, product training, and great support. Vigilant is focused on providing high quality medical products and services which improve patient care, while maintaining the utmost moral and ethical standards at every level of the company. Vigilant represents products which meet three goals:</p>
-<p>• Patient Benefit</p>
-<p>• Revenue for the provider</p>
-<p>• Residual monthly sales commissions</p>
-<p>
-  <br>
-</p>
-<p>SUMMARY</p>
-<p>
-  <br>
-</p>
-<p>Responsible for selling medical products and services to hospitals and surgical centers.&nbsp;</p>
-<p>
-  <br>
-</p>
-<p>PRIMARY RESPONSIBILITIES</p>
-<p>• Maximize existing relationships with customers at hospitals and surgical centers to sell Vigilant systems.</p>
-<p>• Arrange appointments with hospital administration.</p>
-<p>• Perform product demonstrations, implementation, and educational support.</p>
-<p>• Improve product knowledge and sales techniques.</p>
-<p>• To call on regular and prospective customers to promote products and services.</p>
-<p>• Coordinate all issues with key clients between sales, service, support, customer services, marketing and finance.</p>
-<p>• Take orders and disburse receipts.</p>
-<p>
-  <br>
-</p>
-<p>REQUIRED JOB SKILLS</p>
-<p>• Prior Sales Experience in Medical Sales or B to B sales&nbsp;</p>
-<p>• Basic computer skills in:</p>
-<p>• Spreadsheets</p>
-<p>• Powerpoint</p>
-<p>• Word processing</p>
-<p>
-  <br>
-</p>
-<p>REQUIRED SOFT SKILLS</p>
-<p>• Prior Sales Experience in Medical Sales or B to B sales (Medical Sales experience preferred)</p>
-<p>• Strong existing relationships with physicians, medical offices, and hospital administration</p>
-<p>• Being visual or creative</p>
-<p>• Being outgoing or talkative</p>
-<p>• Self Motivated</p>
-<p>• Goal oriented</p>
-<p>
-  <br>
-</p>
-<p>ONLY Experienced Reps with Strong existing relationships with physicians, medical offices, and hospital administration will be considered for this opportunity.</p>
-<p>
-  <br>
-</p>
-<p>All Conversations will remain confidential.</p>
-<p>
-  <br>
-</p>
-          												</div>
-          											</div>
-          										</div>
-          									</li>
-          								</ul>
-          							</div>
-          							<div class="footer__dots">
-          								:::::
-          							</div>
-          						</div><!-- end tab panel -->
-          					</div><!-- end breard and mustache -->
-          					<!-- start shaving -->
-          					<div aria-labelledby="shaving-tab" class="tab-pane tab-fade active" id="shaving" role="tabpanel">
-          						<div class="tab-header">
-          						<div class="headline-container">
-          							<h3>Operations</h3>
-          						</div><img alt="Careers" class="img-responsive" src="assets/images/career1.jpg"></div>
-                      <div class="tab__panel">
-          							<div class="shave__faq--items">
-          								<ul class="shave__faq--group" id="faq">
-          									<li class="active no-padding">
-          										<a class="shave__faq--trigger" href="#">
-          										<div class="title">
-          											<h3>Project Manager</h3>
-          										</div></a>
-          										<div class="shave__faq--content" style="display: block;">
-          											<div class="faq--wrapper">
-          												<div class="desc">
-                                    <p>Management will be of commercial projects within our healthcare core market,. Senior project managers will work closely with all members of the project team, project executives and regional leadership teams and will be responsible for the following:</p>
-<p>• 100% detailed/hands-on knowledge of project scope.</p>
-<p>• Key point of contact with IT department and pharmacies.</p>
-<p>• Challenge &amp; support jobsite and self-perform work team.</p>
-<p>• Accountable for project completion and financials critical success factors, customer satisfaction results.</p>
-<p>Qualifications</p>
-<p>We are looking for a flexible, detail-oriented team player with the ability to manage multiple tasks, produce quality work, and consistently meet deadlines. The successful candidate will possess:</p>
-<p>• Excellent listening skills and strong communication skills.</p>
-<p>• Ability to identify and resolve complex issues.</p>
-<p>• Ability to create and support team morale.</p>
-<p>• Demonstrated understanding of building processes and systems.</p>
-<p>• Work scope requires complete understanding of cost estimating, budgeting and forecasting.</p>
-<p>• Proficient computer skills in Microsoft Office Suite, project management software (Prolog or similar), accounting cost management software (CMIC or similar), and scheduling software (Primavera or similar).</p>
-<p>• Experience with running multiple complex, highly technical projects preferably within DPR's core markets.</p>
-<p>• Bachelor's degree in construction management, engineering or related field.</p>
-<p>• A strong work ethic and a "can-do" attitude.</p>
-<p>• This position is salaried.</p>
-          												</div>
-          											</div>
-          										</div>
-          									</li>
-          									</ul>
-          							</div>
-          							<div class="footer__dots">
-          								:::::
-          							</div>
-          						</div><!-- end tab panel -->
-          					</div><!-- end shaving -->
-          					<!-- start haircut -->
-          					<div aria-labelledby="haircuts-tab" class="tab-pane tab-fade" id="hair-cuts" role="tabpanel">
-          						<div class="tab-header">
-          						<div class="headline-container">
-          							<h3>Development</h3>
-          						</div><img alt="Careers" class="img-responsive" src="assets/images/career1.jpg"></div>
-          						<div class="tab__panel">
-          							<div class="shave__faq--items">
-          								<ul class="shave__faq--group" id="faq">
-          									<li class="active no-padding">
-          										<a class="shave__faq--trigger" href="#">
-          										<div class="title">
-          											<h3>Developer</h3>
-          										</div></a>
-          										<div class="shave__faq--content" style="display: block;">
-          											<div class="faq--wrapper">
-          												<div class="desc">
-                                    <p>What you'll do:</p>
-<p>• Develop, test and implement IoT software&nbsp;</p>
-<p>• Develop, test and deploy mobile app (iOS and Android) to interact with IoT sensors</p>
-<p>• Develop software apps that can be used for technical support</p>
-<p>• Build connectivity layer for data access between IoT platform and analytics</p>
-<p>• Work with electronics hardware design team to develop software to test the sensor and IoT devices</p>
-<p>• Interface with peers from IoT team to understand and document software requirements</p>
-<p>• Communicate the project progress regularly</p>
-<p>Qualifications</p>
-<p>What you'll need:</p>
-<p>• Bachelor's degree in engineering (electrical, electronics, or computer science) with a minimum of 10 years of experience with steadily increasing responsibilities as an Engineer, or a master's degree in engineering (electrical, electronics, or computer science) with a minimum of 8 years of experience with steadily increasing responsibilities as an Engineer</p>
-<p>• Hands on experience in SOAP and REST API client server communication using XML and JSON data parsing</p>
-<p>• Experience with the following programming languages HTML5.0, Python, Java, JavaScript, NodeJS</p>
-<p>• Experience in Android, iOS mobile applications and Web-based applications.</p>
-<p>• Knowledge of the TCP/IP Stack</p>
-<p>• Cloud development experience in AWS IoT</p>
-<p>• Knowledge of SQL and No-SQL databases</p>
-<p>• Experience with network protocols TCP/IP, HTTPS, CoAP/LWM2M, MQTT, BLE</p>
-<p>• Strong knowledge of BLE is a plus</p>
-<p>• Knowledge with network security techniques, TLS, Authentication, Public Key Cryptography, Encryption, and Secure Firmware Updates</p>
-<p>• Good understanding and hands on experience with IoT devices and IoT Platforms</p>
-<p>• Hands on experience developing in a Unix/Linux environment</p>
-<p>• Experience with the development and use of IOT related technologies at the Edge: IOT protocols, local and back haul connectivity technologies and industrial sensor technologies</p>
-          												</div>
-          											</div>
-          										</div>
-          									</li>
-          									<li class="no-padding">
-          										<a class="shave__faq--trigger" href="#">
-          										<div class="title">
-          											<h3>Proficient</h3>
-          										</div></a>
-          										<div class="shave__faq--content" style="display: block;">
-          											<div class="faq--wrapper">
-          												<div class="desc">
-          													<p>Our most popular option, receive a hot towel steam, full shave or trim, and premium products used throughout your experience. We complete your look with a full style and you’ll walk away with a free product sample to keep your edges edgy.</p>
-          												</div>
-          											</div>
-          										</div>
-          									</li>
-          									<li class="no-padding">
-          										<a class="shave__faq--trigger" href="#">
-          										<div class="title">
-          											<h3>Proficient</h3>
-          										</div></a>
-          										<div class="shave__faq--content" style="display: block;">
-          											<div class="faq--wrapper">
-          												<div class="desc">
-          													<p>Our most popular option, receive a hot towel steam, full shave or trim, and premium products used throughout your experience. We complete your look with a full style and you’ll walk away with a free product sample to keep your edges edgy.</p>
-          												</div>
-          											</div>
-          										</div>
-          									</li>
-          								</ul>
-          							</div>
-          							<div class="footer__dots">
-          								:::::
-          							</div>
-          						</div><!-- end tab panel -->
-          					</div><!-- end haircut -->
-          				</div><!-- end tab content -->
-          			</div><!-- end pricing table -->
-          		</div><!-- end wrapper -->
-          	</div><!-- end tab accordion -->
-          </div>    <!-- end price section -->
-
-    </main>
-    <!-- end main -->
-    <!--
-    #################################
-        - Footer -
-    #################################
-    -->
-    <footer class="loading">
-        <div class="sv__container--md">
+         </div>
+      </header>
+      <!-- end header -->
+      <!--
+         #################################
+             - Main Shave Content -
+         #################################
+         -->
+      <main class="sv__main--content">
+         <!--
+            #################################
+                        - Prices -
+            #################################
+            -->  
+         <div class="section container-fluid white-bg container-push">
+            <div class="row sv__container--sm">
+               <div class="col-xs-12 inner__header--sm">
+                  <h2>Careers</h2>
+                  <h3>We are looking for passionate and brilliant people.</h3>
+               </div>
+            </div>
+         </div>
+         <!-- end header -->
+         <!-- price section -->
+         <div class="section container-fluid grey-bg no-padding">
+            <div class="angle-bottom-top" style="color: #fff;"></div>
+            <!-- pricing tab accordion -->
+            <div class="sv__container--sm sm-fluid no-padding tier2">
+               <div class="tabs__wrapper">
+                  <div class="tabs__content" role="tabpanel">
+                     <!-- pricing tab accordion list-->
+                     <ul class="nav nav-tabs nav-justified white-tabs" id="priceTabs" role="tablist">
+                        <li class="tab__control" id="beard-mustache" role="presentation">
+                           <a aria-controls="beard" aria-expanded="false" href="#beard" id="beard-tab" role="tab">
+                              <div class="tab-wrapper-icons">
+                                 <span class="text">Sales & Marketing</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="tab__control active" id="shave" role="presentation">
+                           <a aria-controls="shaving" aria-expanded="false" href="#shaving" id="shaving-tab" role="tab">
+                              <div class="tab-wrapper-icons">
+                                 <span class="text">Operations</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li class="tab__control" id="haircuts" role="presentation">
+                           <a aria-controls="hair-cuts" aria-expanded="false" href="#hair-cuts" id="haircuts-tab" role="tab">
+                              <div class="tab-wrapper-icons">
+                                 <span class="text">Development</span>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                     <!-- end pricing tab accordion list-->
+                     <!-- tab content -->
+                     <div class="tab-content" id="myPriceContent">
+                        <!-- start breard and mustache -->
+                        <div aria-labelledby="beard-tab" class="tab-pane tab-fade" id="beard" role="tabpanel">
+                           <!-- tab header -->
+                           <div class="tab-header">
+                              <div class="headline-container">
+                                 <h3>Sales & Marketing</h3>
+                              </div>
+                              <img alt="The Shave Barbershop HTML Theme" class="img-responsive" src="assets/images/career.jpg">
+                           </div>
+                           <!-- tab panel -->
+                           <div class="tab__panel">
+                              <div class="shave__faq--items">
+                                 <ul class="shave__faq--group" id="faq">
+                                    <li class="active no-padding">
+                                       <a class="shave__faq--trigger" href="#">
+                                          <div class="title">
+                                             <h3>Inside Sales</h3>
+                                          </div>
+                                       </a>
+                                       <div class="shave__faq--content" style="display: block;">
+                                          <div class="faq--wrapper">
+                                             <div class="desc">
+                                                <p>Inside Sales Representative Responsibilities include the following:</p>
+                                                <p>• Selling new business into hospitals across the U.S.</p>
+                                                <p>• Learn and embrace a proven sales methodology that emphasizes mutual commitments</p>
+                                                <p>• Ability to articulate our value proposition</p>
+                                                <p>• Develop a territory plan strategy, and execute on your plan</p>
+                                                <p>• Expanding the goodwill and the name recognition of the company in the marketplace</p>
+                                                <p>
+                                                   <br>
+                                                </p>
+                                                <p>Inside Sales Representative Required Skills:</p>
+                                                <p>• 3+ years of experience selling into a complex environment</p>
+                                                <p>• Exceptional Customer facing communication and presentation skills</p>
+                                                <p>• Strong prospecting skills</p>
+                                                <p>• Ability to confidently and sincerely communicate our value proposition</p>
+                                                <p>• Positive attitude and a passion for having fun</p>
+                                                <p>• Own the Mission accountable for performance</p>
+                                                <p>• Results driven and fearless. High performers walk with a sense of purpose</p>
+                                                <p>• Team player</p>
+                                                <p>• Integrity and character. All actions and interactions are built on this tenet</p>
+                                                <p>• Qualification talent the ability to qualify prospects and get to yes or no faster</p>
+                                                <p>• Detail-oriented and strong organizational skills</p>
+                                                <p>• Empowerment ability to make choices and transform those decisions into action</p>
+                                                <p>• Ability to multi-task and manage tasks accordingly</p>
+                                                <p>• Flexible and adaptive to a changing environment</p>
+                                                <p>• Able to work in a team atmosphere as well as autonomously</p>
+                                                <p>• Excellent computer skills, Word, Excel, Salesforce</p>
+                                                <p>• Healthcare and information technology experience a plus</p>
+                                                <p>
+                                                   <br>
+                                                </p>
+                                                <p>Inside Sales Representative Compensation:</p>
+                                                <p>• Sales Development Representative&nbsp;</p>
+                                                <p>• 50K Base with Total Compensation Projection (TCP) of 100K</p>
+                                                <p>• Location/ Travel: Ideal candidate must be willing to spend 5-10% traveling</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                    <li class="no-padding">
+                                       <a class="shave__faq--trigger" href="#">
+                                          <div class="title">
+                                             <h3>Outside Sales</h3>
+                                          </div>
+                                       </a>
+                                       <div class="shave__faq--content" style="display: block;">
+                                          <div class="faq--wrapper">
+                                             <div class="desc">
+                                                <p>PLEASE NOTE: ONLY Experienced Reps with Strong existing relationships with hospital administration will be considered for this opportunity. All Conversations will remain confidential.</p>
+                                                <p>Call points include:</p>
+                                                <p>• Director of Pharmacy</p>
+                                                <p>• Director of Anesthesiology</p>
+                                                <p>• Director of Compliance</p>
+                                                <p>• Purchasing</p>
+                                                <p>We provide top commissions, product training, and great support. Vigilant is focused on providing high quality medical products and services which improve patient care, while maintaining the utmost moral and ethical standards at every level of the company. Vigilant represents products which meet three goals:</p>
+                                                <p>• Patient Benefit</p>
+                                                <p>• Revenue for the provider</p>
+                                                <p>• Residual monthly sales commissions</p>
+                                                <p>
+                                                   <br>
+                                                </p>
+                                                <p>SUMMARY</p>
+                                                <p>
+                                                   <br>
+                                                </p>
+                                                <p>Responsible for selling medical products and services to hospitals and surgical centers.&nbsp;</p>
+                                                <p>
+                                                   <br>
+                                                </p>
+                                                <p>PRIMARY RESPONSIBILITIES</p>
+                                                <p>• Maximize existing relationships with customers at hospitals and surgical centers to sell Vigilant systems.</p>
+                                                <p>• Arrange appointments with hospital administration.</p>
+                                                <p>• Perform product demonstrations, implementation, and educational support.</p>
+                                                <p>• Improve product knowledge and sales techniques.</p>
+                                                <p>• To call on regular and prospective customers to promote products and services.</p>
+                                                <p>• Coordinate all issues with key clients between sales, service, support, customer services, marketing and finance.</p>
+                                                <p>• Take orders and disburse receipts.</p>
+                                                <p>
+                                                   <br>
+                                                </p>
+                                                <p>REQUIRED JOB SKILLS</p>
+                                                <p>• Prior Sales Experience in Medical Sales or B to B sales&nbsp;</p>
+                                                <p>• Basic computer skills in:</p>
+                                                <p>• Spreadsheets</p>
+                                                <p>• Powerpoint</p>
+                                                <p>• Word processing</p>
+                                                <p>
+                                                   <br>
+                                                </p>
+                                                <p>REQUIRED SOFT SKILLS</p>
+                                                <p>• Prior Sales Experience in Medical Sales or B to B sales (Medical Sales experience preferred)</p>
+                                                <p>• Strong existing relationships with physicians, medical offices, and hospital administration</p>
+                                                <p>• Being visual or creative</p>
+                                                <p>• Being outgoing or talkative</p>
+                                                <p>• Self Motivated</p>
+                                                <p>• Goal oriented</p>
+                                                <p>
+                                                   <br>
+                                                </p>
+                                                <p>ONLY Experienced Reps with Strong existing relationships with physicians, medical offices, and hospital administration will be considered for this opportunity.</p>
+                                                <p>
+                                                   <br>
+                                                </p>
+                                                <p>All Conversations will remain confidential.</p>
+                                                <p>
+                                                   <br>
+                                                </p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="footer__dots">
+                                 :::::
+                              </div>
+                           </div>
+                           <!-- end tab panel -->
+                        </div>
+                        <!-- end breard and mustache -->
+                        <!-- start shaving -->
+                        <div aria-labelledby="shaving-tab" class="tab-pane tab-fade active" id="shaving" role="tabpanel">
+                           <div class="tab-header">
+                              <div class="headline-container">
+                                 <h3>Operations</h3>
+                              </div>
+                              <img alt="Careers" class="img-responsive" src="assets/images/career1.jpg">
+                           </div>
+                           <div class="tab__panel">
+                              <div class="shave__faq--items">
+                                 <ul class="shave__faq--group" id="faq">
+                                    <li class="active no-padding">
+                                       <a class="shave__faq--trigger" href="#">
+                                          <div class="title">
+                                             <h3>Project Manager</h3>
+                                          </div>
+                                       </a>
+                                       <div class="shave__faq--content" style="display: block;">
+                                          <div class="faq--wrapper">
+                                             <div class="desc">
+                                                <p>Management will be of commercial projects within our healthcare core market,. Senior project managers will work closely with all members of the project team, project executives and regional leadership teams and will be responsible for the following:</p>
+                                                <p>• 100% detailed/hands-on knowledge of project scope.</p>
+                                                <p>• Key point of contact with IT department and pharmacies.</p>
+                                                <p>• Challenge &amp; support jobsite and self-perform work team.</p>
+                                                <p>• Accountable for project completion and financials critical success factors, customer satisfaction results.</p>
+                                                <p>Qualifications</p>
+                                                <p>We are looking for a flexible, detail-oriented team player with the ability to manage multiple tasks, produce quality work, and consistently meet deadlines. The successful candidate will possess:</p>
+                                                <p>• Excellent listening skills and strong communication skills.</p>
+                                                <p>• Ability to identify and resolve complex issues.</p>
+                                                <p>• Ability to create and support team morale.</p>
+                                                <p>• Demonstrated understanding of building processes and systems.</p>
+                                                <p>• Work scope requires complete understanding of cost estimating, budgeting and forecasting.</p>
+                                                <p>• Proficient computer skills in Microsoft Office Suite, project management software (Prolog or similar), accounting cost management software (CMIC or similar), and scheduling software (Primavera or similar).</p>
+                                                <p>• Experience with running multiple complex, highly technical projects preferably within DPR's core markets.</p>
+                                                <p>• Bachelor's degree in construction management, engineering or related field.</p>
+                                                <p>• A strong work ethic and a "can-do" attitude.</p>
+                                                <p>• This position is salaried.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="footer__dots">
+                                 :::::
+                              </div>
+                           </div>
+                           <!-- end tab panel -->
+                        </div>
+                        <!-- end shaving -->
+                        <!-- start haircut -->
+                        <div aria-labelledby="haircuts-tab" class="tab-pane tab-fade" id="hair-cuts" role="tabpanel">
+                           <div class="tab-header">
+                              <div class="headline-container">
+                                 <h3>Development</h3>
+                              </div>
+                              <img alt="Careers" class="img-responsive" src="assets/images/career1.jpg">
+                           </div>
+                           <div class="tab__panel">
+                              <div class="shave__faq--items">
+                                 <ul class="shave__faq--group" id="faq">
+                                    <li class="active no-padding">
+                                       <a class="shave__faq--trigger" href="#">
+                                          <div class="title">
+                                             <h3>Developer</h3>
+                                          </div>
+                                       </a>
+                                       <div class="shave__faq--content" style="display: block;">
+                                          <div class="faq--wrapper">
+                                             <div class="desc">
+                                                <p>What you'll do:</p>
+                                                <p>• Develop, test and implement IoT software&nbsp;</p>
+                                                <p>• Develop, test and deploy mobile app (iOS and Android) to interact with IoT sensors</p>
+                                                <p>• Develop software apps that can be used for technical support</p>
+                                                <p>• Build connectivity layer for data access between IoT platform and analytics</p>
+                                                <p>• Work with electronics hardware design team to develop software to test the sensor and IoT devices</p>
+                                                <p>• Interface with peers from IoT team to understand and document software requirements</p>
+                                                <p>• Communicate the project progress regularly</p>
+                                                <p>Qualifications</p>
+                                                <p>What you'll need:</p>
+                                                <p>• Bachelor's degree in engineering (electrical, electronics, or computer science) with a minimum of 10 years of experience with steadily increasing responsibilities as an Engineer, or a master's degree in engineering (electrical, electronics, or computer science) with a minimum of 8 years of experience with steadily increasing responsibilities as an Engineer</p>
+                                                <p>• Hands on experience in SOAP and REST API client server communication using XML and JSON data parsing</p>
+                                                <p>• Experience with the following programming languages HTML5.0, Python, Java, JavaScript, NodeJS</p>
+                                                <p>• Experience in Android, iOS mobile applications and Web-based applications.</p>
+                                                <p>• Knowledge of the TCP/IP Stack</p>
+                                                <p>• Cloud development experience in AWS IoT</p>
+                                                <p>• Knowledge of SQL and No-SQL databases</p>
+                                                <p>• Experience with network protocols TCP/IP, HTTPS, CoAP/LWM2M, MQTT, BLE</p>
+                                                <p>• Strong knowledge of BLE is a plus</p>
+                                                <p>• Knowledge with network security techniques, TLS, Authentication, Public Key Cryptography, Encryption, and Secure Firmware Updates</p>
+                                                <p>• Good understanding and hands on experience with IoT devices and IoT Platforms</p>
+                                                <p>• Hands on experience developing in a Unix/Linux environment</p>
+                                                <p>• Experience with the development and use of IOT related technologies at the Edge: IOT protocols, local and back haul connectivity technologies and industrial sensor technologies</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                    <li class="no-padding">
+                                       <a class="shave__faq--trigger" href="#">
+                                          <div class="title">
+                                             <h3>Proficient</h3>
+                                          </div>
+                                       </a>
+                                       <div class="shave__faq--content" style="display: block;">
+                                          <div class="faq--wrapper">
+                                             <div class="desc">
+                                                <p>Our most popular option, receive a hot towel steam, full shave or trim, and premium products used throughout your experience. We complete your look with a full style and you’ll walk away with a free product sample to keep your edges edgy.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                    <li class="no-padding">
+                                       <a class="shave__faq--trigger" href="#">
+                                          <div class="title">
+                                             <h3>Proficient</h3>
+                                          </div>
+                                       </a>
+                                       <div class="shave__faq--content" style="display: block;">
+                                          <div class="faq--wrapper">
+                                             <div class="desc">
+                                                <p>Our most popular option, receive a hot towel steam, full shave or trim, and premium products used throughout your experience. We complete your look with a full style and you’ll walk away with a free product sample to keep your edges edgy.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="footer__dots">
+                                 :::::
+                              </div>
+                           </div>
+                           <!-- end tab panel -->
+                        </div>
+                        <!-- end haircut -->
+                     </div>
+                     <!-- end tab content -->
+                  </div>
+                  <!-- end pricing table -->
+               </div>
+               <!-- end wrapper -->
+            </div>
+            <!-- end tab accordion -->
+         </div>
+         <!-- end price section -->
+      </main>
+      <!-- end main -->
+      <!--
+         #################################
+             - Footer -
+         #################################
+         -->
+      <footer class="loading">
+         <div class="sv__container--md">
             <!-- Footer Wrapper -->
             <div class="footer__wrapper">
-                <div class="row footer__row">
-                    <!-- Footer Logo -->
-                    <div class="footer__logo no-padding">
-                        <div class="logo__container">
-                            <div class="footer__logo--img">
-                               <!-- replace with white logo png version -->
-                <img class="img-responsive logo-white" src="assets/images/logo/footer-logo.png" alt="Vigilant Software" />
-                            </div>
-
-                            <div class="social-footer  centerText">
-                                <ul>
-                                    <li><a href="https://www.linkedin.com/company/vigilantlabels/"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="https://twitter.com/VigilantLabels"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCMNtLXNgs7XLM7pJXX5OFxw"><i class="fa fa-youtube-play"></i></a></li>
-
-                                </ul>
-                            </div>
-
+               <div class="row footer__row">
+                  <!-- Footer Logo -->
+                  <div class="footer__logo no-padding">
+                     <div class="logo__container">
+                        <div class="footer__logo--img">
+                           <!-- replace with white logo png version -->
+                           <img class="img-responsive logo-white" src="assets/images/logo/footer-logo.png" alt="Vigilant Software" />
                         </div>
-                    </div>
-                    <!-- Footer Description -->
-                    <div class="footer__desc">
-                        <!-- email container -->
-                        <div class="email__wrapper">
-                            <!-- email form -->
-                            <div class="email__form form-group">
-                                <form>
-                                    <!-- email input -->
-                                    <input type="email" class="form-control email__form--input" id="footer-email" name="EMAIL" required placeholder="Your Email Address">
-                                    <!-- subtext to email -->
-                                    <div class="email__offers">
-                                        <p>Stay updated on the latest + special offers and more.</p>
-                                    </div>
-                                    <!-- end sub-text -->
-                                    <button type="submit" class="btn book-now-btn form-btn">Submit</button>
-                                </form>
-                            </div>
-                            <!-- end email form -->
+                        <div class="social-footer  centerText">
+                           <ul>
+                              <li><a href="https://www.linkedin.com/company/vigilantlabels/"><i class="fa fa-linkedin"></i></a></li>
+                              <li><a href="https://twitter.com/VigilantLabels"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="https://www.youtube.com/channel/UCMNtLXNgs7XLM7pJXX5OFxw"><i class="fa fa-youtube-play"></i></a></li>
+                           </ul>
                         </div>
-                        <!-- end email container -->
-                        <!-- address container -->
-                        <div class="row footer__contact">
-                            <!-- address -->
-                            <div class="col-xs-12 col-sm-6 footer__address no-padding">
-                                <p>950 East State Highway 114</p>
-                                <p>Suite 160</p>
-                                <p>Southlake, TX 76092</p>
-
-                            </div>
-                            <!-- email -->
-                            <div class="col-xs-12 col-sm-6 contact no-padding">
-                                <a class="email" href="mailto:hello@theshave.com">sales@vigilantlabels.com</a>
-                                <a class="phone" href="tel:859-797-2331">859-797-2331</a>
-                            </div>
-
-
+                     </div>
+                  </div>
+                  <!-- Footer Description -->
+                  <div class="footer__desc">
+                     <!-- email container -->
+                     <div class="email__wrapper">
+                        <!-- email form -->
+                        <div class="email__form form-group">
+                           <form>
+                              <!-- email input -->
+                              <input type="email" class="form-control email__form--input" id="footer-email" name="EMAIL" required placeholder="Your Email Address">
+                              <!-- subtext to email -->
+                              <div class="email__offers">
+                                 <p>Stay updated on the latest + special offers and more.</p>
+                              </div>
+                              <!-- end sub-text -->
+                              <button type="submit" class="btn book-now-btn form-btn">Submit</button>
+                           </form>
                         </div>
-
-                           <div class="row social-footer">
-
-                            <!-- end col -->
-                            <!-- copyright -->
-                            <div class="col-12 text-left">
-                                <div class="copyright">
-                                    <p>Copyright &copy; Vigilant Labels 2018 • All rights reserved</p>
-                                </div>
-                            </div>
-                            <!-- end col -->
+                        <!-- end email form -->
+                     </div>
+                     <!-- end email container -->
+                     <!-- address container -->
+                     <div class="row footer__contact">
+                        <!-- address -->
+                        <div class="col-xs-12 col-sm-6 footer__address no-padding">
+                           <p>950 East State Highway 114</p>
+                           <p>Suite 160</p>
+                           <p>Southlake, TX 76092</p>
                         </div>
-                        <!-- end address container -->
-                        <!-- social media -->
-
-                        <!-- end social media -->
-                    </div>
-
-
-
-                    <!-- end right side -->
-                </div>
-                <!-- end row -->
+                        <!-- email -->
+                        <div class="col-xs-12 col-sm-6 contact no-padding">
+                           <a class="email" href="mailto:hello@theshave.com">sales@vigilantlabels.com</a>
+                           <a class="phone" href="tel:859-797-2331">859-797-2331</a>
+                        </div>
+                     </div>
+                     <div class="row social-footer">
+                        <!-- end col -->
+                        <!-- copyright -->
+                        <div class="col-12 text-left">
+                           <div class="copyright">
+                              <p>Copyright &copy; Vigilant Labels 2018 • All rights reserved</p>
+                           </div>
+                        </div>
+                        <!-- end col -->
+                     </div>
+                     <!-- end address container -->
+                     <!-- social media -->
+                     <!-- end social media -->
+                  </div>
+                  <!-- end right side -->
+               </div>
+               <!-- end row -->
             </div>
             <!-- end container -->
-        </div>
-        <!-- end container md -->
-    </footer>
-    <!-- end foother -->
-
-    <!-- Book now modal -->
-    <div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+         </div>
+         <!-- end container md -->
+      </footer>
+      <!-- end foother -->
+      <!-- Book now modal -->
+      <div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="row">
-                    <!-- Modal Section 1 -->
-                    <div class="col-xs-12 no-padding modal-info">
-                        <!-- Mobile close btn (hidden on larger screens) -->
-                        <button type="button" class="modal-close" aria-label="Close"><i class="fa fa-times"></i>
-                        </button>
-                        <!-- Section 1 content -->
-                        <div class="modal-bookNow"  style="background-color: #0773BB">
-                            <h3>Contact Info</h3>
-                            <h5>Start your journey to a safer hospital!</h5>
-                        </div>
-                        <!-- end modal content -->
-                    </div>
-                    <!-- end modal section 1 -->
-                    <!-- Modal Section 2 new -->
-                     <div class="modal-body">
-                    <div class="col-xs-12 no-padding">
+               <div class="row">
+                  <!-- Modal Section 1 -->
+                  <div class="col-xs-12 no-padding modal-info">
+                     <!-- Mobile close btn (hidden on larger screens) -->
+                     <button type="button" class="modal-close" aria-label="Close"><i class="fa fa-times"></i>
+                     </button>
+                     <!-- Section 1 content -->
+                     <div class="modal-bookNow"  style="background-color: #0773BB">
+                        <h3>Contact Info</h3>
+                        <h5>Start your journey to a safer hospital!</h5>
+                     </div>
+                     <!-- end modal content -->
+                  </div>
+                  <!-- end modal section 1 -->
+                  <!-- Modal Section 2 new -->
+                  <div class="modal-body">
+                     <div class="col-xs-12 no-padding">
                         <div class="modal-form">
                            <div class="col-xs-12"  style="color:blue">
-                            <div class="input__container">
-                                <span class="icon"><i class="fa fa-user"></i></span>
-                                <input type="text" class="user-name" id="contact-name" name="NAME" required="" placeholder="Name">
-                            </div>
-                            <div class="input__container">
-                                <span class="icon"><i class="fa fa-envelope"></i></span>
-                                <input type="email" class="user-email" id="contact-email" name="EMAIL" required="" placeholder="Email">
-                            </div>
-                            <div class="input__container">
-                                <span class="icon"><i class="fa fa-phone"></i></span>
-                                <input type="text" class="user-phone" id="contact-phone" name="PHONE" required="" placeholder="Phone">
-                            </div>
-
-
+                              <div class="input__container">
+                                 <span class="icon"><i class="fa fa-user"></i></span>
+                                 <input type="text" class="user-name" id="contact-name" name="NAME" required="" placeholder="Name">
+                              </div>
+                              <div class="input__container">
+                                 <span class="icon"><i class="fa fa-envelope"></i></span>
+                                 <input type="email" class="user-email" id="contact-email" name="EMAIL" required="" placeholder="Email">
+                              </div>
+                              <div class="input__container">
+                                 <span class="icon"><i class="fa fa-phone"></i></span>
+                                 <input type="text" class="user-phone" id="contact-phone" name="PHONE" required="" placeholder="Phone">
+                              </div>
                               <div class="input__container">
                                  <span class="icon"><i class="fa fa-pencil "></i></span>
-                            <textarea id="contact-message" class="user-text" name="MESSAGE" required="" placeholder="Message"></textarea>
-                            </div>
-                             <div class="input__container">
-                              <button type="submit" class="btn book-now-btn btn-block form-btn" style="color:0773BB">Submit</button>
+                                 <textarea id="contact-message" class="user-text" name="MESSAGE" required="" placeholder="Message"></textarea>
+                              </div>
+                              <div class="input__container">
+                                 <button type="submit" class="btn book-now-btn btn-block form-btn" style="color:0773BB">Submit</button>
+                              </div>
                            </div>
-
-
-
-                        </div>
-
-                        <div class="col-xs-12 col-md-6 form__right pencil-contact">
-
-                        </div>
-
-
+                           <div class="col-xs-12 col-md-6 form__right pencil-contact">
+                           </div>
                         </div>
                         <!-- end modal-form -->
-                    </div>
-                </div>
-                    <!-- end modal section 2 -->
-                </div>
-                <!-- end row -->
+                     </div>
+                  </div>
+                  <!-- end modal section 2 -->
+               </div>
+               <!-- end row -->
             </div>
             <!-- end modal-content -->
-        </div>
-        <!-- end modal-dialog -->
-    </div>
-    <!-- End Modal -->
-    <!-- shave shop phone -->
-    <div class="sv-toast" data-toast="phone">
-        <div class="alert alert-success sv-phone" role="alert">
+         </div>
+         <!-- end modal-dialog -->
+      </div>
+      <!-- End Modal -->
+      <!-- shave shop phone -->
+      <div class="sv-toast" data-toast="phone">
+         <div class="alert alert-success sv-phone" role="alert">
             <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h2>Still using a phone?</h2>
             <p>Feel free to call us.</p>
             <img class="img-responsive" src="assets/images/phone.jpg" alt="The Shave Phone Number" />
             <a href="" class="tele">859-797-2331</a>
-        </div>
-    </div>
-    <!-- end shop pimes -->
-    <!-- shave shop times -->
-    <div class="sv-toast" data-toast="hours">
-        <div class="alert alert-success sv-hours" role="alert">
+         </div>
+      </div>
+      <!-- end shop pimes -->
+      <!-- shave shop times -->
+      <div class="sv-toast" data-toast="hours">
+         <div class="alert alert-success sv-hours" role="alert">
             <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="toast-title">
-                <h2>The Shop hours</h2>
-                <h6>We're open</h6>
+               <h2>The Shop hours</h2>
+               <h6>We're open</h6>
             </div>
             <div class="toast-hours">
-                <p><span>Mon - Fri :</span> 9:00 AM - 9:00 PM</p>
-                <p><span>Sat :</span> 9:00 AM - 2:00 PM</p>
+               <p><span>Mon - Fri :</span> 9:00 AM - 9:00 PM</p>
+               <p><span>Sat :</span> 9:00 AM - 2:00 PM</p>
             </div>
-        </div>
-    </div>
-    <!-- end shop times -->
-    <!-- Plugins -->
-    <script src="assets/scripts/jquery.min.js"></script>
-    <script src="assets/scripts/jquery.menu-aim.js"></script>
-    <script src="assets/scripts/modernizr.min.js"></script>
-    <script src="assets/scripts/bootstrap.min.js"></script>
-    <script src="assets/scripts/skrollr.min.js"></script>
-    <script src="assets/scripts/imagesloaded.min.js"></script>
-    <script src="assets/scripts/jquery-placeholder.min.js"></script>
-    <script src="assets/scripts/jquery.prefetch.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="assets/scripts/debug.addIndicators.min.js"></script>
-    <!-- Settings -->
-    <script src="assets/scripts/window-settings.min.js"></script>
-    <script src="assets/scripts/nav-settings.min.js"></script>
-    <script src="assets/scripts/main-settings.min.js"></script>
-    <!-- Script block allowing child pages to inject their own scripts -->
-    <script src="assets/scripts/price-tabs.min.js"></script>
-<script type="text/javascript"> var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"5b25dcc861bf912ba4d1d147b164537da0366ad2a47e6bc756c5300fb971f05d1a2010ab7b6727677d37b27582c0e9c4", values:{},ready:function(){}}; var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true; s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>"); </script>
-</body>
-
+         </div>
+      </div>
+      <!-- end shop times -->
+      <!-- Plugins -->
+      <script src="assets/scripts/jquery.min.js"></script>
+      <script src="assets/scripts/jquery.menu-aim.js"></script>
+      <script src="assets/scripts/modernizr.min.js"></script>
+      <script src="assets/scripts/bootstrap.min.js"></script>
+      <script src="assets/scripts/skrollr.min.js"></script>
+      <script src="assets/scripts/imagesloaded.min.js"></script>
+      <script src="assets/scripts/jquery-placeholder.min.js"></script>
+      <script src="assets/scripts/jquery.prefetch.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+      <script src="assets/scripts/debug.addIndicators.min.js"></script>
+      <!-- Settings -->
+      <script src="assets/scripts/window-settings.min.js"></script>
+      <script src="assets/scripts/nav-settings.min.js"></script>
+      <script src="assets/scripts/main-settings.min.js"></script>
+      <!-- Script block allowing child pages to inject their own scripts -->
+      <script src="assets/scripts/price-tabs.min.js"></script>
+      <script type="text/javascript"> var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"5b25dcc861bf912ba4d1d147b164537da0366ad2a47e6bc756c5300fb971f05d1a2010ab7b6727677d37b27582c0e9c4", values:{},ready:function(){}}; var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true; s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>"); </script>
+   </body>
 </html>
