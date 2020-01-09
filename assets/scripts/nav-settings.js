@@ -295,8 +295,12 @@
 		modal.on('hide.bs.modal', modalOut);
 
 		modal.on('click', function () {
-			$('.modal').modal('toggle');
+			// $('.modal').modal('toggle');
 		});
+
+		// modal.on('click', "#bookNowModal", function(e){
+		// 	e.preventDefault();
+		// });
 
 
 		function centerModal(){
