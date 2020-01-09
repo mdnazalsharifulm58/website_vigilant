@@ -686,7 +686,7 @@
                   <!-- Modal Section 1 -->
                   <div class="col-xs-12 no-padding modal-info">
                      <!-- Mobile close btn (hidden on larger screens) -->
-                     <button type="button" class="modal-close" aria-label="Close"><i class="fa fa-times"></i>
+                     <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i>
                      </button>
                      <!-- Section 1 content -->
                      <div class="modal-bookNow"  style="background-color: #0773BB">
@@ -698,34 +698,36 @@
                   <!-- end modal section 1 -->
                   <!-- Modal Section 2 new -->
                   <div class="modal-body">
-                     <div class="col-xs-12 no-padding">
-                        <div class="modal-form">
-                           <div class="col-xs-12"  style="color:blue">
-                              <div class="input__container">
-                                 <span class="icon"><i class="fa fa-user"></i></span>
-                                 <input type="text" class="user-name" id="contact-name" name="NAME" required="" placeholder="Name">
+                     <form action='https://forms.zohopublic.com/jfountaine/form/Demo/formperma/2jpcmbJ8S5woTP2NUKU3QmM_tAJleopB57Tq1-NyuoE/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'>
+                        <div class="col-xs-12 no-padding">
+                           <div class="modal-form">
+                              <div class="col-xs-12"  style="color:blue">
+                                 <div class="input__container">
+                                    <span class="icon"><i class="fa fa-user"></i></span>
+                                    <input type="text" class="user-name" id="contact-name" name="NAME" required="" placeholder="Name">
+                                 </div>
+                                 <div class="input__container">
+                                    <span class="icon"><i class="fa fa-envelope"></i></span>
+                                    <input type="email" class="user-email" id="contact-email" name="EMAIL" required="" placeholder="Email">
+                                 </div>
+                                 <div class="input__container">
+                                    <span class="icon"><i class="fa fa-phone"></i></span>
+                                    <input type="text" class="user-phone" id="contact-phone" name="PHONE" required="" placeholder="Phone">
+                                 </div>
+                                 <div class="input__container">
+                                    <span class="icon"><i class="fa fa-pencil "></i></span>
+                                    <textarea id="contact-message" class="user-text" name="MESSAGE" required="" placeholder="Message"></textarea>
+                                 </div>
+                                 <div class="input__container">
+                                    <button type="submit" class="btn book-now-btn btn-block form-btn" style="color:0773BB">Submit</button>
+                                 </div>
                               </div>
-                              <div class="input__container">
-                                 <span class="icon"><i class="fa fa-envelope"></i></span>
-                                 <input type="email" class="user-email" id="contact-email" name="EMAIL" required="" placeholder="Email">
-                              </div>
-                              <div class="input__container">
-                                 <span class="icon"><i class="fa fa-phone"></i></span>
-                                 <input type="text" class="user-phone" id="contact-phone" name="PHONE" required="" placeholder="Phone">
-                              </div>
-                              <div class="input__container">
-                                 <span class="icon"><i class="fa fa-pencil "></i></span>
-                                 <textarea id="contact-message" class="user-text" name="MESSAGE" required="" placeholder="Message"></textarea>
-                              </div>
-                              <div class="input__container">
-                                 <button type="submit" class="btn book-now-btn btn-block form-btn" style="color:0773BB">Submit</button>
+                              <div class="col-xs-12 col-md-6 form__right pencil-contact">
                               </div>
                            </div>
-                           <div class="col-xs-12 col-md-6 form__right pencil-contact">
-                           </div>
+                           <!-- end modal-form -->
                         </div>
-                        <!-- end modal-form -->
-                     </div>
+                     </form>
                   </div>
                   <!-- end modal section 2 -->
                </div>
@@ -792,8 +794,7 @@
          $(document).ready(function(){
          	$('.launch-modal').click(function(){
          		$('#bookNowModal').modal({
-         			backdrop: 'static',
-               keyboard: 'false'
+         			backdrop: 'static'
          		});
          	});
          });
